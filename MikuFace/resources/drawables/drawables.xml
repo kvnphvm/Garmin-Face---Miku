@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.svg" />
+    <bitmap id="MikuSprite" filename="miku.png" />
+</drawables>

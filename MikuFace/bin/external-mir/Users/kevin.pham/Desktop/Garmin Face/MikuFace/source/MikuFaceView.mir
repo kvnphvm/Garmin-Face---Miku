@@ -1,0 +1,2145 @@
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Time,4,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; @symbol_importdef<2> = [Gregorian,5,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [WatchUi,6,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 10; @position = 6; @symbol_constdef = [COLOR_TEAL,10,6,16]; ]
+const COLOR_TEAL = 0x55AAAA;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 11; @position = 6; @symbol_constdef = [COLOR_TEXT,11,6,16]; ]
+const COLOR_TEXT = 0xFFFFFF;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 12; @position = 6; @symbol_constdef = [COLOR_LABEL,12,6,17]; ]
+const COLOR_LABEL = 0xAAAAAA;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 13; @position = 6; @symbol_constdef = [COLOR_SUNRISE,13,6,19]; ]
+const COLOR_SUNRISE = 0xFFAA00;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 14; @position = 6; @symbol_constdef = [COLOR_SUNSET,14,6,18]; ]
+const COLOR_SUNSET = 0xFF5500;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 15; @position = 6; @symbol_constdef = [COLOR_BATTERY_OK,15,6,22]; ]
+const COLOR_BATTERY_OK = 0x55FF55;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 16; @position = 6; @symbol_constdef = [COLOR_BATTERY_LOW,16,6,23]; ]
+const COLOR_BATTERY_LOW = 0xFF5555;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 17; @position = 6; @symbol_constdef = [COLOR_TRACK,17,6,17]; ]
+const COLOR_TRACK = 0x555555;
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 22; @symbol_classdef = [IdleLoop,22,6,14]; @symbol_extends<0> = [WatchUi,22,23,30]; @symbol_extends<1> = [AnimationDelegate,22,31,48]; ]
+class IdleLoop extends WatchUi.AnimationDelegate {
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 22; ]
+    <init> {
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 22; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 24; @position = 16; @symbol_vardef = [_view,24,16,21]; @symbol_type<0> = [MikuFaceView,24,25,37]; ]
+    private
+    var _view as MikuFaceView;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 26; @symbol_functiondef = [initialize,26,13,23]; @symbol_param<0> = [view,26,24,28]; @symbol_param<0>_type<0> = [MikuFaceView,26,32,44]; ]
+    function initialize(view as MikuFaceView) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_26_46_29_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 27 8 ]
+        symbol [ AnimationDelegate %tmp.2 27 8 25 ];
+        %tmp.2 = getv ? :AnimationDelegate;
+        symbol [ initialize %tmp.3 27 26 36 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 28 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 28 16 20 ];
+        symbol [ _view ? 28 8 13 ];
+        putv self :_view %tmp.4;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_26_46_29_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 31; @symbol_functiondef = [onAnimationEvent,31,13,29]; @symbol_param<0> = [event,31,30,35]; @symbol_param<0>_type<0> = [AnimationEvent,31,39,53]; @symbol_param<1> = [options,31,55,62]; @symbol_param<1>_type<0> = [Dictionary,31,66,76]; ]
+    function onAnimationEvent(event as AnimationEvent, options as Dictionary) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_31_86_40_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 32 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_8_39_8_if_stmt:
+        %tmp.1 = lgetv %event;
+        symbol [ event %tmp.1 32 12 17 ];
+        symbol [ WatchUi %tmp.2 32 21 28 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ ANIMATION_EVENT_COMPLETE %tmp.3 32 29 53 ];
+        %tmp.3 = getv %tmp.2 :ANIMATION_EVENT_COMPLETE;
+        %tmp.4 = eq %tmp.1 %tmp.3;
+        bf %tmp.4 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_8_39_8_if_else_false;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_8_39_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_55_34_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 33 12 ]
+        symbol [ _view %tmp.6 33 12 17 ];
+        %tmp.6 = getv ? :_view;
+        symbol [ replayIdle %tmp.7 33 18 28 ];
+        %tmp.7 = getv function %tmp.6 :replayIdle;
+        invoke %tmp.6 %tmp.7();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_55_34_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_8_39_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_8_39_8_if_else_false:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_34_15_39_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 38 12 ]
+        symbol [ _view %tmp.9 38 12 17 ];
+        %tmp.9 = getv ? :_view;
+        symbol [ idleStopped %tmp.10 38 18 29 ];
+        %tmp.10 = getv function %tmp.9 :idleStopped;
+        invoke %tmp.9 %tmp.10();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_34_15_39_8_stop:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_32_8_39_8_if_end:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_31_86_40_4_stop:
+    }
+}
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 43; @symbol_classdef = [MikuFaceView,43,6,18]; @symbol_extends<0> = [WatchUi,43,27,34]; @symbol_extends<1> = [WatchFace,43,35,44]; ]
+class MikuFaceView extends WatchUi.WatchFace {
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 43; ]
+    <init> {
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 43; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 53; @position = 18; @symbol_constdef = [SPRITE_X,53,18,26]; ]
+    private
+    const SPRITE_X = 18;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 54; @position = 18; @symbol_constdef = [SPRITE_Y,54,18,26]; ]
+    private
+    const SPRITE_Y = 66;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 55; @position = 18; @symbol_constdef = [COLUMN_CENTER,55,18,31]; ]
+    private
+    const COLUMN_CENTER = 191;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 56; @position = 18; @symbol_constdef = [COLUMN_WIDTH,56,18,30]; ]
+    private
+    const COLUMN_WIDTH = 114;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 57; @position = 18; @symbol_constdef = [CENTER_X,57,18,26]; ]
+    private
+    const CENTER_X = 130;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 64; @position = 18; @symbol_constdef = [SUN_Y,64,18,23]; ]
+    private
+    const SUN_Y = 28;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 65; @position = 18; @symbol_constdef = [TIME_Y,65,18,24]; ]
+    private
+    const TIME_Y = 91;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 66; @position = 18; @symbol_constdef = [DATE_Y,66,18,24]; ]
+    private
+    const DATE_Y = 127;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 67; @position = 18; @symbol_constdef = [TEMP_Y,67,18,24]; ]
+    private
+    const TEMP_Y = 153;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 68; @position = 18; @symbol_constdef = [CONDITION_Y,68,18,29]; ]
+    private
+    const CONDITION_Y = 175;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 69; @position = 18; @symbol_constdef = [STEPS_Y,69,18,25]; ]
+    private
+    const STEPS_Y = 211;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 70; @position = 18; @symbol_constdef = [BATTERY_Y,70,18,27]; ]
+    private
+    const BATTERY_Y = 241;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 74; @position = 18; @symbol_constdef = [SUN_MARKER_W,74,18,30]; ]
+    private
+    const SUN_MARKER_W = 12;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 75; @position = 18; @symbol_constdef = [SUN_MARKER_GAP,75,18,32]; ]
+    private
+    const SUN_MARKER_GAP = 4;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 76; @position = 18; @symbol_constdef = [SUN_PAIR_GAP,76,18,30]; ]
+    private
+    const SUN_PAIR_GAP = 22;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 80; @position = 18; @symbol_constdef = [BATTERY_W,80,18,27]; ]
+    private
+    const BATTERY_W = 22;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 81; @position = 18; @symbol_constdef = [BATTERY_H,81,18,27]; ]
+    private
+    const BATTERY_H = 12;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 82; @position = 18; @symbol_constdef = [BATTERY_NUB_W,82,18,31]; ]
+    private
+    const BATTERY_NUB_W = 2;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 83; @position = 18; @symbol_constdef = [BATTERY_NUB_H,83,18,31]; ]
+    private
+    const BATTERY_NUB_H = 6;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 84; @position = 18; @symbol_constdef = [BATTERY_WALL,84,18,30]; ]
+    private
+    const BATTERY_WALL = 2;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 85; @position = 18; @symbol_constdef = [BATTERY_GAP,85,18,29]; ]
+    private
+    const BATTERY_GAP = 6;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 87; @position = 16; @symbol_vardef = [_data,87,16,21]; @symbol_type<0> = [WatchData,87,25,34]; ]
+    private
+    var _data as WatchData;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 88; @position = 16; @symbol_vardef = [_sprite,88,16,23]; @symbol_type<0> = [BitmapResource,88,27,41]; ]
+    private
+    var _sprite as BitmapResource or Null = null;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 89; @position = 16; @symbol_vardef = [_idle,89,16,21]; @symbol_type<0> = [AnimationLayer,89,25,39]; ]
+    private
+    var _idle as AnimationLayer or Null = null;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 90; @position = 16; @symbol_vardef = [_loop,90,16,21]; @symbol_type<0> = [IdleLoop,90,25,33]; ]
+    private
+    var _loop as IdleLoop or Null = null;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 91; @position = 16; @symbol_vardef = [_animating,91,16,26]; @symbol_type<0> = [Boolean,91,30,37]; ]
+    private
+    var _animating as Boolean = false;
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 93; @symbol_functiondef = [initialize,93,13,23]; ]
+    function initialize() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_93_26_96_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 94 8 ]
+        symbol [ WatchFace %tmp.2 94 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 94 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 95 8 ]
+        symbol [ WatchData %tmp.7 95 20 29 ];
+        %tmp.7 = getv ? :WatchData;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _data ? 95 8 13 ];
+        putv self :_data %tmp.4;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_93_26_96_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 98; @symbol_functiondef = [onLayout,98,13,21]; @symbol_param<0> = [dc,98,22,24]; @symbol_param<0>_type<0> = [Dc,98,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_98_40_111_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 99 8 ]
+        symbol [ WatchUi %tmp.1 99 18 25 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.2 99 26 38 ];
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        symbol [ Rez %tmp.4 99 39 42 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Drawables %tmp.5 99 43 52 ];
+        %tmp.5 = getv %tmp.4 :Drawables;
+        symbol [ MikuSprite %tmp.6 99 53 63 ];
+        %tmp.6 = getv %tmp.5 :MikuSprite;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        %tmp.8 = as %tmp.7 BitmapResource;
+        symbol [ BitmapResource %tmp.8 99 68 82 ];
+        symbol [ _sprite ? 99 8 15 ];
+        putv self :_sprite %tmp.8;
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 103 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_98_40_111_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_98_40_111_4_stop" ]
+        %idle.1 = local;
+        symbol [ idle %idle.1 103 12 16 ];
+        symbol [ WatchUi %tmp.11 103 23 30 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ AnimationLayer %tmp.12 103 31 45 ];
+        %tmp.12 = getv function ? %tmp.11 :AnimationLayer;
+        symbol [ Rez %tmp.14 103 46 49 ];
+        %tmp.14 = getv ? :Rez;
+        symbol [ Drawables %tmp.15 103 50 59 ];
+        %tmp.15 = getv %tmp.14 :Drawables;
+        symbol [ MikuIdle %tmp.16 103 60 68 ];
+        %tmp.16 = getv %tmp.15 :MikuIdle;
+        %tmp.17 = newd 3;
+        %tmp.19 = const :locX;
+        symbol [ locX %tmp.19 104 13 17 const ];
+        symbol [ SPRITE_X %tmp.21 104 21 29 ];
+        %tmp.21 = getv ? :SPRITE_X;
+        %tmp.22 = dup %tmp.17;
+        %tmp.23 = aputv %tmp.22 %tmp.19 %tmp.21;
+        %tmp.25 = const :locY;
+        symbol [ locY %tmp.25 105 13 17 const ];
+        symbol [ SPRITE_Y %tmp.27 105 21 29 ];
+        %tmp.27 = getv ? :SPRITE_Y;
+        %tmp.28 = dup %tmp.23;
+        %tmp.29 = aputv %tmp.28 %tmp.25 %tmp.27;
+        %tmp.31 = const :visibility;
+        symbol [ visibility %tmp.31 106 13 23 const ];
+        %tmp.32 = false;
+        %tmp.33 = dup %tmp.29;
+        %tmp.34 = aputv %tmp.33 %tmp.31 %tmp.32;
+        %tmp.9 = newc %tmp.12 (%tmp.16, %tmp.34);
+        lputv %idle.1 %tmp.9;
+        symbol [ idle %idle.1 103 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 108 8 ]
+        %tmp.35 = self;
+        symbol [ addLayer %tmp.36 108 8 16 ];
+        %tmp.36 = getv function %tmp.35 :addLayer;
+        %tmp.37 = lgetv %idle.1;
+        symbol [ idle %tmp.37 108 17 21 ];
+        invoke %tmp.35 %tmp.36(%tmp.37);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 109 8 ]
+        %tmp.38 = lgetv %idle.1;
+        symbol [ idle %tmp.38 109 16 20 ];
+        symbol [ _idle ? 109 8 13 ];
+        putv self :_idle %tmp.38;
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 110 8 ]
+        symbol [ IdleLoop %tmp.42 110 20 28 ];
+        %tmp.42 = getv ? :IdleLoop;
+        %tmp.43 = self;
+        symbol [ self %tmp.43 110 29 33 ];
+        %tmp.39 = newc %tmp.42 (%tmp.43);
+        symbol [ _loop ? 110 8 13 ];
+        putv self :_loop %tmp.39;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_98_40_111_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 113; @symbol_functiondef = [onShow,113,13,19]; ]
+    function onShow() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_113_30_115_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 114 8 ]
+        %tmp.1 = self;
+        symbol [ startIdle %tmp.2 114 8 17 ];
+        %tmp.2 = getv function %tmp.1 :startIdle;
+        invoke %tmp.1 %tmp.2();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_113_30_115_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 117; @symbol_functiondef = [onHide,117,13,19]; ]
+    function onHide() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_117_30_120_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 118 8 ]
+        %tmp.1 = self;
+        symbol [ stopIdle %tmp.2 118 8 16 ];
+        %tmp.2 = getv function %tmp.1 :stopIdle;
+        invoke %tmp.1 %tmp.2();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 119 8 ]
+        symbol [ View %tmp.4 119 8 12 ];
+        %tmp.4 = getv ? :View;
+        symbol [ onHide %tmp.5 119 13 19 ];
+        %tmp.5 = getv function %tmp.4 :onHide;
+        invoke %tmp.4 %tmp.5();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_117_30_120_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 122; @symbol_functiondef = [onExitSleep,122,13,24]; ]
+    function onExitSleep() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_122_35_124_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 123 8 ]
+        %tmp.1 = self;
+        symbol [ startIdle %tmp.2 123 8 17 ];
+        %tmp.2 = getv function %tmp.1 :startIdle;
+        invoke %tmp.1 %tmp.2();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_122_35_124_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 126; @symbol_functiondef = [onEnterSleep,126,13,25]; ]
+    function onEnterSleep() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_126_36_131_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 129 8 ]
+        %tmp.1 = self;
+        symbol [ stopIdle %tmp.2 129 8 16 ];
+        %tmp.2 = getv function %tmp.1 :stopIdle;
+        invoke %tmp.1 %tmp.2();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 130 8 ]
+        symbol [ WatchUi %tmp.3 130 8 15 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.4 130 16 29 ];
+        %tmp.4 = getv function %tmp.3 :requestUpdate;
+        invoke %tmp.3 %tmp.4();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_126_36_131_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 133; @symbol_functiondef = [startIdle,133,21,30]; ]
+    private
+    function startIdle() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_133_41_141_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 134 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_133_41_141_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_133_41_141_4_stop" ]
+        %idle.1 = local;
+        symbol [ idle %idle.1 134 12 16 ];
+        symbol [ _idle %tmp.2 134 19 24 ];
+        %tmp.2 = getv ? :_idle;
+        lputv %idle.1 %tmp.2;
+        symbol [ idle %idle.1 134 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 135 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_8_137_8_if_stmt:
+        %tmp.3 = lgetv %idle.1;
+        symbol [ idle %tmp.3 135 12 16 ];
+        %tmp.4 = null;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bf %tmp.5 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_8_137_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_8_137_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_26_137_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 136 12 ]
+        ret ?;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_26_137_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_8_137_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_135_8_137_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 138 8 ]
+        %tmp.6 = true;
+        symbol [ _animating ? 138 8 18 ];
+        putv self :_animating %tmp.6;
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 139 8 ]
+        %tmp.7 = lgetv %idle.1;
+        symbol [ idle %tmp.7 139 8 12 ];
+        symbol [ setVisible %tmp.8 139 13 23 ];
+        %tmp.8 = getv function %tmp.7 :setVisible;
+        %tmp.9 = true;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 140 8 ]
+        %tmp.10 = lgetv %idle.1;
+        symbol [ idle %tmp.10 140 8 12 ];
+        symbol [ play %tmp.11 140 13 17 ];
+        %tmp.11 = getv function %tmp.10 :play;
+        %tmp.12 = newd 1;
+        %tmp.14 = const :delegate;
+        symbol [ delegate %tmp.14 140 20 28 const ];
+        symbol [ _loop %tmp.16 140 32 37 ];
+        %tmp.16 = getv ? :_loop;
+        %tmp.17 = dup %tmp.12;
+        %tmp.18 = aputv %tmp.17 %tmp.14 %tmp.16;
+        invoke %tmp.10 %tmp.11(%tmp.18);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_133_41_141_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 143; @symbol_functiondef = [stopIdle,143,21,29]; ]
+    private
+    function stopIdle() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_143_40_151_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 144 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_143_40_151_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_143_40_151_4_stop" ]
+        %idle.1 = local;
+        symbol [ idle %idle.1 144 12 16 ];
+        symbol [ _idle %tmp.2 144 19 24 ];
+        %tmp.2 = getv ? :_idle;
+        lputv %idle.1 %tmp.2;
+        symbol [ idle %idle.1 144 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 145 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_8_147_8_if_stmt:
+        %tmp.3 = lgetv %idle.1;
+        symbol [ idle %tmp.3 145 12 16 ];
+        %tmp.4 = null;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bf %tmp.5 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_8_147_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_8_147_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_26_147_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 146 12 ]
+        ret ?;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_26_147_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_8_147_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_145_8_147_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 148 8 ]
+        %tmp.6 = false;
+        symbol [ _animating ? 148 8 18 ];
+        putv self :_animating %tmp.6;
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 149 8 ]
+        %tmp.7 = lgetv %idle.1;
+        symbol [ idle %tmp.7 149 8 12 ];
+        symbol [ stop %tmp.8 149 13 17 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 150 8 ]
+        %tmp.9 = lgetv %idle.1;
+        symbol [ idle %tmp.9 150 8 12 ];
+        symbol [ setVisible %tmp.10 150 13 23 ];
+        %tmp.10 = getv function %tmp.9 :setVisible;
+        %tmp.11 = false;
+        invoke %tmp.9 %tmp.10(%tmp.11);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_143_40_151_4_stop:
+    }
+    //! Restart the loop, unless the watch has gone back to sleep in the
+    //! meantime. Called by IdleLoop when a play-through finishes.
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 155; @symbol_functiondef = [replayIdle,155,13,23]; ]
+    function replayIdle() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_155_34_160_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 156 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_155_34_160_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_155_34_160_4_stop" ]
+        %idle.1 = local;
+        symbol [ idle %idle.1 156 12 16 ];
+        symbol [ _idle %tmp.2 156 19 24 ];
+        %tmp.2 = getv ? :_idle;
+        lputv %idle.1 %tmp.2;
+        symbol [ idle %idle.1 156 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 157 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_8_159_8_if_stmt:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_12_157_28_begin:
+        %tmp.3 = lgetv %idle.1;
+        symbol [ idle %tmp.3 157 12 16 ];
+        %tmp.4 = null;
+        %tmp.5 = ne %tmp.3 %tmp.4;
+        bf %tmp.5 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_8_159_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_28_157_28_true:
+        symbol [ _animating %tmp.7 157 28 38 ];
+        %tmp.7 = getv ? :_animating;
+        push %tmp.7;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_28_157_28_end:
+        %tmp.8 = phi [%tmp.5 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_12_157_28_begin] [%tmp.7 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_28_157_28_true] [%tmp.8 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_28_157_28_end];
+        bf %tmp.8 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_8_159_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_8_159_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_40_159_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 158 12 ]
+        %tmp.9 = lgetv %idle.1;
+        symbol [ idle %tmp.9 158 12 16 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        symbol [ play %tmp.11 158 17 21 ];
+        %tmp.11 = getv function %tmp.10 :play;
+        %tmp.12 = newd 1;
+        %tmp.14 = const :delegate;
+        symbol [ delegate %tmp.14 158 24 32 const ];
+        symbol [ _loop %tmp.16 158 36 41 ];
+        %tmp.16 = getv ? :_loop;
+        %tmp.17 = dup %tmp.12;
+        %tmp.18 = aputv %tmp.17 %tmp.14 %tmp.16;
+        invoke %tmp.10 %tmp.11(%tmp.18);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_40_159_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_8_159_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_157_8_159_8_if_end:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_155_34_160_4_stop:
+    }
+    //! Fall back to the still. Called by IdleLoop when playback ends for any
+    //! reason other than reaching the end of the clip.
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 164; @symbol_functiondef = [idleStopped,164,13,24]; ]
+    function idleStopped() as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_164_35_172_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 165 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_164_35_172_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_164_35_172_4_stop" ]
+        %idle.1 = local;
+        symbol [ idle %idle.1 165 12 16 ];
+        symbol [ _idle %tmp.2 165 19 24 ];
+        %tmp.2 = getv ? :_idle;
+        lputv %idle.1 %tmp.2;
+        symbol [ idle %idle.1 165 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 166 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_8_168_8_if_stmt:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_12_166_29_begin:
+        %tmp.3 = lgetv %idle.1;
+        symbol [ idle %tmp.3 166 12 16 ];
+        %tmp.4 = null;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bt %tmp.5 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_8_168_8_if_true;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_28_166_29_false:
+        symbol [ _animating %tmp.7 166 29 39 ];
+        %tmp.7 = getv ? :_animating;
+        %tmp.8 = not %tmp.7;
+        push %tmp.8;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_28_166_29_end:
+        %tmp.9 = phi [%tmp.5 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_12_166_29_begin] [%tmp.8 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_28_166_29_false] [%tmp.9 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_28_166_29_end];
+        bf %tmp.9 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_8_168_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_8_168_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_41_168_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 167 12 ]
+        ret ?;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_41_168_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_8_168_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_166_8_168_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 169 8 ]
+        %tmp.10 = false;
+        symbol [ _animating ? 169 8 18 ];
+        putv self :_animating %tmp.10;
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 170 8 ]
+        %tmp.11 = lgetv %idle.1;
+        symbol [ idle %tmp.11 170 8 12 ];
+        symbol [ setVisible %tmp.12 170 13 23 ];
+        %tmp.12 = getv function %tmp.11 :setVisible;
+        %tmp.13 = false;
+        invoke %tmp.11 %tmp.12(%tmp.13);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 171 8 ]
+        symbol [ WatchUi %tmp.14 171 8 15 ];
+        %tmp.14 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.15 171 16 29 ];
+        %tmp.15 = getv function %tmp.14 :requestUpdate;
+        invoke %tmp.14 %tmp.15();
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_164_35_172_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 174; @symbol_functiondef = [onUpdate,174,13,21]; @symbol_param<0> = [dc,174,22,24]; @symbol_param<0>_type<0> = [Dc,174,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_174_40_187_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 175 8 ]
+        symbol [ _data %tmp.2 175 8 13 ];
+        %tmp.2 = getv ? :_data;
+        symbol [ refresh %tmp.3 175 14 21 ];
+        %tmp.3 = getv function %tmp.2 :refresh;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 177 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 177 8 10 ];
+        symbol [ setColor %tmp.5 177 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        symbol [ Graphics %tmp.6 177 20 28 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.7 177 29 40 ];
+        %tmp.7 = getv %tmp.6 :COLOR_BLACK;
+        symbol [ Graphics %tmp.8 177 42 50 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.9 177 51 62 ];
+        %tmp.9 = getv %tmp.8 :COLOR_BLACK;
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 178 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 178 8 10 ];
+        symbol [ clear %tmp.11 178 11 16 ];
+        %tmp.11 = getv function %tmp.10 :clear;
+        invoke %tmp.10 %tmp.11();
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 180 8 ]
+        %tmp.12 = self;
+        symbol [ drawSprite %tmp.13 180 8 18 ];
+        %tmp.13 = getv function %tmp.12 :drawSprite;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 180 19 21 ];
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 181 8 ]
+        %tmp.15 = self;
+        symbol [ drawSunTimes %tmp.16 181 8 20 ];
+        %tmp.16 = getv function %tmp.15 :drawSunTimes;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 181 21 23 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 182 8 ]
+        %tmp.18 = self;
+        symbol [ drawTime %tmp.19 182 8 16 ];
+        %tmp.19 = getv function %tmp.18 :drawTime;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 182 17 19 ];
+        invoke %tmp.18 %tmp.19(%tmp.20);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 183 8 ]
+        %tmp.21 = self;
+        symbol [ drawDate %tmp.22 183 8 16 ];
+        %tmp.22 = getv function %tmp.21 :drawDate;
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 183 17 19 ];
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 184 8 ]
+        %tmp.24 = self;
+        symbol [ drawWeather %tmp.25 184 8 19 ];
+        %tmp.25 = getv function %tmp.24 :drawWeather;
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 184 20 22 ];
+        invoke %tmp.24 %tmp.25(%tmp.26);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 185 8 ]
+        %tmp.27 = self;
+        symbol [ drawSteps %tmp.28 185 8 17 ];
+        %tmp.28 = getv function %tmp.27 :drawSteps;
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 185 18 20 ];
+        invoke %tmp.27 %tmp.28(%tmp.29);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 186 8 ]
+        %tmp.30 = self;
+        symbol [ drawBattery %tmp.31 186 8 19 ];
+        %tmp.31 = getv function %tmp.30 :drawBattery;
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 186 20 22 ];
+        invoke %tmp.30 %tmp.31(%tmp.32);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_174_40_187_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 189; @symbol_functiondef = [drawSprite,189,21,31]; @symbol_param<0> = [dc,189,32,34]; @symbol_param<0>_type<0> = [Dc,189,38,40]; ]
+    private
+    function drawSprite(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_189_50_199_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 192 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_8_194_8_if_stmt:
+        symbol [ _animating %tmp.2 192 12 22 ];
+        %tmp.2 = getv ? :_animating;
+        bf %tmp.2 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_8_194_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_8_194_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_24_194_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 193 12 ]
+        ret ?;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_24_194_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_8_194_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_192_8_194_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 195 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_189_50_199_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_189_50_199_4_stop" ]
+        %sprite.1 = local;
+        symbol [ sprite %sprite.1 195 12 18 ];
+        symbol [ _sprite %tmp.4 195 21 28 ];
+        %tmp.4 = getv ? :_sprite;
+        lputv %sprite.1 %tmp.4;
+        symbol [ sprite %sprite.1 195 12 18 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 196 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_8_198_8_if_stmt:
+        %tmp.5 = lgetv %sprite.1;
+        symbol [ sprite %tmp.5 196 12 18 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_8_198_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_8_198_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_28_198_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 197 12 ]
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 197 12 14 ];
+        symbol [ drawBitmap %tmp.9 197 15 25 ];
+        %tmp.9 = getv function %tmp.8 :drawBitmap;
+        symbol [ SPRITE_X %tmp.11 197 26 34 ];
+        %tmp.11 = getv ? :SPRITE_X;
+        symbol [ SPRITE_Y %tmp.13 197 36 44 ];
+        %tmp.13 = getv ? :SPRITE_Y;
+        %tmp.14 = lgetv %sprite.1;
+        symbol [ sprite %tmp.14 197 46 52 ];
+        %tmp.15 = as %tmp.14 { (!Null) };
+        invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13, %tmp.15);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_28_198_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_8_198_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_196_8_198_8_if_end:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_189_50_199_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 201; @symbol_functiondef = [drawTime,201,21,29]; @symbol_param<0> = [dc,201,30,32]; @symbol_param<0>_type<0> = [Dc,201,36,38]; ]
+    private
+    function drawTime(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 202 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_stop" ]
+        %clock.1 = local;
+        symbol [ clock %clock.1 202 12 17 ];
+        symbol [ System %tmp.1 202 20 26 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 202 27 39 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clock.1 %tmp.3;
+        symbol [ clock %clock.1 202 12 17 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 203 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_stop" ]
+        %hour.2 = local;
+        symbol [ hour %hour.2 203 12 16 ];
+        %tmp.4 = lgetv %clock.1;
+        symbol [ clock %tmp.4 203 19 24 ];
+        symbol [ hour %tmp.5 203 25 29 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        lputv %hour.2 %tmp.5;
+        symbol [ hour %hour.2 203 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 204 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_8_209_8_if_stmt:
+        symbol [ System %tmp.6 204 13 19 ];
+        %tmp.6 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.7 204 20 37 ];
+        %tmp.7 = getv function %tmp.6 :getDeviceSettings;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ is24Hour %tmp.9 204 40 48 ];
+        %tmp.9 = getv %tmp.8 :is24Hour;
+        %tmp.10 = not %tmp.9;
+        bf %tmp.10 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_8_209_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_8_209_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_50_209_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 205 12 ]
+        %tmp.11 = lgetv %hour.2;
+        symbol [ hour %tmp.11 205 19 23 ];
+        %tmp.12 = 12;
+        %tmp.13 = mod %tmp.11 %tmp.12;
+        lputv %hour.2 %tmp.13;
+        symbol [ hour %hour.2 205 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 206 12 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_12_208_12_if_stmt:
+        %tmp.14 = lgetv %hour.2;
+        symbol [ hour %tmp.14 206 16 20 ];
+        %tmp.15 = 0;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        bf %tmp.16 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_12_208_12_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_12_208_12_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_27_208_12_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 207 16 ]
+        %tmp.17 = 12;
+        lputv %hour.2 %tmp.17;
+        symbol [ hour %hour.2 207 16 20 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_27_208_12_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_12_208_12_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_206_12_208_12_if_end:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_50_209_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_8_209_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_204_8_209_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 210 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_stop" ]
+        %text.3 = local;
+        symbol [ text %text.3 210 12 16 ];
+        symbol [ Lang %tmp.18 210 19 23 ];
+        %tmp.18 = getm $.Toybox.Lang;
+        symbol [ format %tmp.19 210 24 30 ];
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "$1$:$2$";
+        %tmp.21 = newa 2;
+        %tmp.22 = lgetv %hour.2;
+        symbol [ hour %tmp.22 210 43 47 ];
+        symbol [ format %tmp.23 210 48 54 ];
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "%d";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = dup %tmp.21;
+        %tmp.27 = aputv %tmp.26 0 %tmp.25;
+        %tmp.28 = lgetv %clock.1;
+        symbol [ clock %tmp.28 210 62 67 ];
+        symbol [ min %tmp.29 210 68 71 ];
+        %tmp.29 = getv %tmp.28 :min;
+        symbol [ format %tmp.30 210 72 78 ];
+        %tmp.30 = getv function %tmp.29 :format;
+        %tmp.31 = "%02d";
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        %tmp.33 = dup %tmp.27;
+        %tmp.34 = aputv %tmp.33 1 %tmp.32;
+        %tmp.35 = invoke %tmp.18 %tmp.19(%tmp.20, %tmp.34);
+        lputv %text.3 %tmp.35;
+        symbol [ text %text.3 210 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 214 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_stop" ]
+        %font.4 = local;
+        symbol [ font %font.4 214 12 16 ];
+        symbol [ Graphics %tmp.36 214 19 27 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.37 214 28 46 ];
+        %tmp.37 = getv %tmp.36 :FONT_NUMBER_MEDIUM;
+        lputv %font.4 %tmp.37;
+        symbol [ font %font.4 214 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 215 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_8_217_8_if_stmt:
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 215 12 14 ];
+        symbol [ getTextWidthInPixels %tmp.39 215 15 35 ];
+        %tmp.39 = getv function %tmp.38 :getTextWidthInPixels;
+        %tmp.40 = lgetv %text.3;
+        symbol [ text %tmp.40 215 36 40 ];
+        %tmp.41 = lgetv %font.4;
+        symbol [ font %tmp.41 215 42 46 ];
+        %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41);
+        symbol [ COLUMN_WIDTH %tmp.44 215 50 62 ];
+        %tmp.44 = getv ? :COLUMN_WIDTH;
+        %tmp.45 = gt %tmp.42 %tmp.44;
+        bf %tmp.45 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_8_217_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_8_217_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_64_217_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 216 12 ]
+        symbol [ Graphics %tmp.46 216 19 27 ];
+        %tmp.46 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MILD %tmp.47 216 28 44 ];
+        %tmp.47 = getv %tmp.46 :FONT_NUMBER_MILD;
+        lputv %font.4 %tmp.47;
+        symbol [ font %font.4 216 12 16 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_64_217_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_8_217_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_215_8_217_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 219 8 ]
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 219 8 10 ];
+        symbol [ setColor %tmp.49 219 11 19 ];
+        %tmp.49 = getv function %tmp.48 :setColor;
+        symbol [ COLOR_TEXT %tmp.51 219 20 30 ];
+        %tmp.51 = getv ? :COLOR_TEXT;
+        symbol [ Graphics %tmp.52 219 32 40 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.53 219 41 58 ];
+        %tmp.53 = getv %tmp.52 :COLOR_TRANSPARENT;
+        invoke %tmp.48 %tmp.49(%tmp.51, %tmp.53);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 220 8 ]
+        %tmp.54 = lgetv %dc;
+        symbol [ dc %tmp.54 220 8 10 ];
+        symbol [ drawText %tmp.55 220 11 19 ];
+        %tmp.55 = getv function %tmp.54 :drawText;
+        symbol [ COLUMN_CENTER %tmp.57 220 20 33 ];
+        %tmp.57 = getv ? :COLUMN_CENTER;
+        symbol [ TIME_Y %tmp.59 220 35 41 ];
+        %tmp.59 = getv ? :TIME_Y;
+        %tmp.60 = lgetv %font.4;
+        symbol [ font %tmp.60 220 43 47 ];
+        %tmp.61 = lgetv %text.3;
+        symbol [ text %tmp.61 220 49 53 ];
+        symbol [ Graphics %tmp.62 221 12 20 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.63 221 21 40 ];
+        %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.64 221 43 51 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.65 221 52 72 ];
+        %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_VCENTER;
+        %tmp.66 = bitor %tmp.63 %tmp.65;
+        invoke %tmp.54 %tmp.55(%tmp.57, %tmp.59, %tmp.60, %tmp.61, %tmp.66);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_201_48_222_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 224; @symbol_functiondef = [drawDate,224,21,29]; @symbol_param<0> = [dc,224,30,32]; @symbol_param<0>_type<0> = [Dc,224,36,38]; ]
+    private
+    function drawDate(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_224_48_235_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 225 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_224_48_235_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_224_48_235_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 225 12 15 ];
+        symbol [ Gregorian %tmp.1 225 18 27 ];
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.2 225 28 32 ];
+        %tmp.2 = getv function %tmp.1 :info;
+        symbol [ Time %tmp.3 225 33 37 ];
+        %tmp.3 = getm $.Toybox.Time;
+        symbol [ now %tmp.4 225 38 41 ];
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ Time %tmp.6 225 45 49 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.7 225 50 63 ];
+        %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %now.1 %tmp.8;
+        symbol [ now %now.1 225 12 15 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 226 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_224_48_235_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_224_48_235_4_stop" ]
+        %text.2 = local;
+        symbol [ text %text.2 226 12 16 ];
+        symbol [ Lang %tmp.9 226 19 23 ];
+        %tmp.9 = getm $.Toybox.Lang;
+        symbol [ format %tmp.10 226 24 30 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "$1$ $2$ $3$";
+        %tmp.12 = newa 3;
+        %tmp.13 = lgetv %now.1;
+        symbol [ now %tmp.13 227 13 16 ];
+        symbol [ day_of_week %tmp.14 227 17 28 ];
+        %tmp.14 = getv %tmp.13 :day_of_week;
+        %tmp.15 = as %tmp.14 String;
+        symbol [ String %tmp.15 227 32 38 ];
+        symbol [ toUpper %tmp.16 227 40 47 ];
+        %tmp.16 = getv function %tmp.15 :toUpper;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        %tmp.18 = dup %tmp.12;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = lgetv %now.1;
+        symbol [ now %tmp.20 228 13 16 ];
+        symbol [ month %tmp.21 228 17 22 ];
+        %tmp.21 = getv %tmp.20 :month;
+        %tmp.22 = as %tmp.21 String;
+        symbol [ String %tmp.22 228 26 32 ];
+        symbol [ toUpper %tmp.23 228 34 41 ];
+        %tmp.23 = getv function %tmp.22 :toUpper;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = dup %tmp.19;
+        %tmp.26 = aputv %tmp.25 1 %tmp.24;
+        %tmp.27 = lgetv %now.1;
+        symbol [ now %tmp.27 229 12 15 ];
+        symbol [ day %tmp.28 229 16 19 ];
+        %tmp.28 = getv %tmp.27 :day;
+        symbol [ format %tmp.29 229 20 26 ];
+        %tmp.29 = getv function %tmp.28 :format;
+        %tmp.30 = "%d";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        %tmp.32 = dup %tmp.26;
+        %tmp.33 = aputv %tmp.32 2 %tmp.31;
+        %tmp.34 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.33);
+        lputv %text.2 %tmp.34;
+        symbol [ text %text.2 226 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 232 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 232 8 10 ];
+        symbol [ setColor %tmp.36 232 11 19 ];
+        %tmp.36 = getv function %tmp.35 :setColor;
+        symbol [ COLOR_TEAL %tmp.38 232 20 30 ];
+        %tmp.38 = getv ? :COLOR_TEAL;
+        symbol [ Graphics %tmp.39 232 32 40 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.40 232 41 58 ];
+        %tmp.40 = getv %tmp.39 :COLOR_TRANSPARENT;
+        invoke %tmp.35 %tmp.36(%tmp.38, %tmp.40);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 233 8 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 233 8 10 ];
+        symbol [ drawText %tmp.42 233 11 19 ];
+        %tmp.42 = getv function %tmp.41 :drawText;
+        symbol [ COLUMN_CENTER %tmp.44 233 20 33 ];
+        %tmp.44 = getv ? :COLUMN_CENTER;
+        symbol [ DATE_Y %tmp.46 233 35 41 ];
+        %tmp.46 = getv ? :DATE_Y;
+        symbol [ Graphics %tmp.47 233 43 51 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.48 233 52 62 ];
+        %tmp.48 = getv %tmp.47 :FONT_XTINY;
+        %tmp.49 = lgetv %text.2;
+        symbol [ text %tmp.49 233 64 68 ];
+        symbol [ Graphics %tmp.50 234 12 20 ];
+        %tmp.50 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.51 234 21 40 ];
+        %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.52 234 43 51 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.53 234 52 72 ];
+        %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_VCENTER;
+        %tmp.54 = bitor %tmp.51 %tmp.53;
+        invoke %tmp.41 %tmp.42(%tmp.44, %tmp.46, %tmp.48, %tmp.49, %tmp.54);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_224_48_235_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 237; @symbol_functiondef = [drawWeather,237,21,32]; @symbol_param<0> = [dc,237,33,35]; @symbol_param<0>_type<0> = [Dc,237,39,41]; ]
+    private
+    function drawWeather(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 238 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_stop" ]
+        %temperature.1 = local;
+        symbol [ temperature %temperature.1 238 12 23 ];
+        symbol [ _data %tmp.2 238 26 31 ];
+        %tmp.2 = getv ? :_data;
+        symbol [ temperature %tmp.3 238 32 43 ];
+        %tmp.3 = getv %tmp.2 :temperature;
+        lputv %temperature.1 %tmp.3;
+        symbol [ temperature %temperature.1 238 12 23 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 239 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_stop" ]
+        %text.2 = local;
+        symbol [ text %text.2 239 12 16 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_begin:
+        %tmp.4 = lgetv %temperature.1;
+        symbol [ temperature %tmp.4 239 19 30 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_else_false;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_true:
+        symbol [ Lang %tmp.7 240 14 18 ];
+        %tmp.7 = getm $.Toybox.Lang;
+        symbol [ format %tmp.8 240 19 25 ];
+        %tmp.8 = getv function %tmp.7 :format;
+        %tmp.9 = "$1$°";
+        %tmp.10 = newa 1;
+        %tmp.11 = lgetv %temperature.1;
+        symbol [ temperature %tmp.11 240 36 47 ];
+        %tmp.12 = as %tmp.11 { (!Null) };
+        %tmp.13 = as %tmp.12 Number;
+        symbol [ Number %tmp.13 240 51 57 ];
+        symbol [ format %tmp.14 240 59 65 ];
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "%d";
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        %tmp.17 = dup %tmp.10;
+        %tmp.18 = aputv %tmp.17 0 %tmp.16;
+        %tmp.19 = invoke %tmp.7 %tmp.8(%tmp.9, %tmp.18);
+        push %tmp.19;
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_else_false:
+        %tmp.20 = "--°";
+        push %tmp.20;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_end:
+        %tmp.21 = phi [%tmp.6 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_begin] [%tmp.19 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_true] [%tmp.20 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_else_false] [%tmp.21 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_239_19_241_14_end];
+        lputv %text.2 %tmp.21;
+        symbol [ text %text.2 239 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 243 8 ]
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 243 8 10 ];
+        symbol [ setColor %tmp.23 243 11 19 ];
+        %tmp.23 = getv function %tmp.22 :setColor;
+        symbol [ COLOR_TEXT %tmp.25 243 20 30 ];
+        %tmp.25 = getv ? :COLOR_TEXT;
+        symbol [ Graphics %tmp.26 243 32 40 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.27 243 41 58 ];
+        %tmp.27 = getv %tmp.26 :COLOR_TRANSPARENT;
+        invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 244 8 ]
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 244 8 10 ];
+        symbol [ drawText %tmp.29 244 11 19 ];
+        %tmp.29 = getv function %tmp.28 :drawText;
+        symbol [ COLUMN_CENTER %tmp.31 244 20 33 ];
+        %tmp.31 = getv ? :COLUMN_CENTER;
+        symbol [ TEMP_Y %tmp.33 244 35 41 ];
+        %tmp.33 = getv ? :TEMP_Y;
+        symbol [ Graphics %tmp.34 244 43 51 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.35 244 52 61 ];
+        %tmp.35 = getv %tmp.34 :FONT_TINY;
+        %tmp.36 = lgetv %text.2;
+        symbol [ text %tmp.36 244 63 67 ];
+        symbol [ Graphics %tmp.37 245 12 20 ];
+        %tmp.37 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.38 245 21 40 ];
+        %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.39 245 43 51 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.40 245 52 72 ];
+        %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_VCENTER;
+        %tmp.41 = bitor %tmp.38 %tmp.40;
+        invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33, %tmp.35, %tmp.36, %tmp.41);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 247 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_stop" ]
+        %condition.3 = local;
+        symbol [ condition %condition.3 247 12 21 ];
+        symbol [ _data %tmp.43 247 24 29 ];
+        %tmp.43 = getv ? :_data;
+        symbol [ condition %tmp.44 247 30 39 ];
+        %tmp.44 = getv %tmp.43 :condition;
+        lputv %condition.3 %tmp.44;
+        symbol [ condition %condition.3 247 12 21 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 248 8 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 248 8 10 ];
+        symbol [ setColor %tmp.46 248 11 19 ];
+        %tmp.46 = getv function %tmp.45 :setColor;
+        symbol [ COLOR_LABEL %tmp.48 248 20 31 ];
+        %tmp.48 = getv ? :COLOR_LABEL;
+        symbol [ Graphics %tmp.49 248 33 41 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.50 248 42 59 ];
+        %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 249 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 249 8 10 ];
+        symbol [ drawText %tmp.52 249 11 19 ];
+        %tmp.52 = getv function %tmp.51 :drawText;
+        symbol [ COLUMN_CENTER %tmp.54 249 20 33 ];
+        %tmp.54 = getv ? :COLUMN_CENTER;
+        symbol [ CONDITION_Y %tmp.56 249 35 46 ];
+        %tmp.56 = getv ? :CONDITION_Y;
+        symbol [ Graphics %tmp.57 249 48 56 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.58 249 57 67 ];
+        %tmp.58 = getv %tmp.57 :FONT_XTINY;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_begin:
+        %tmp.59 = lgetv %condition.3;
+        symbol [ condition %tmp.59 250 12 21 ];
+        %tmp.60 = null;
+        %tmp.61 = ne %tmp.59 %tmp.60;
+        bf %tmp.61 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_else_false;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_true:
+        %tmp.62 = lgetv %condition.3;
+        symbol [ condition %tmp.62 250 32 41 ];
+        %tmp.63 = as %tmp.62 { (!Null) };
+        %tmp.64 = as %tmp.63 String;
+        symbol [ String %tmp.64 250 45 51 ];
+        push %tmp.64;
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_else_false:
+        %tmp.65 = "NO DATA";
+        push %tmp.65;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_end:
+        %tmp.66 = phi [%tmp.61 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_begin] [%tmp.64 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_true] [%tmp.65 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_else_false] [%tmp.66 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_250_12_250_54_end];
+        symbol [ Graphics %tmp.67 251 12 20 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.68 251 21 40 ];
+        %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.69 251 43 51 ];
+        %tmp.69 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.70 251 52 72 ];
+        %tmp.70 = getv %tmp.69 :TEXT_JUSTIFY_VCENTER;
+        %tmp.71 = bitor %tmp.68 %tmp.70;
+        invoke %tmp.51 %tmp.52(%tmp.54, %tmp.56, %tmp.58, %tmp.66, %tmp.71);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_237_51_252_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 257; @symbol_functiondef = [drawSunTimes,257,21,33]; @symbol_param<0> = [dc,257,34,36]; @symbol_param<0>_type<0> = [Dc,257,40,42]; ]
+    private
+    function drawSunTimes(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 258 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %font.1 = local;
+        symbol [ font %font.1 258 12 16 ];
+        symbol [ Graphics %tmp.1 258 19 27 ];
+        %tmp.1 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.2 258 28 38 ];
+        %tmp.2 = getv %tmp.1 :FONT_XTINY;
+        lputv %font.1 %tmp.2;
+        symbol [ font %font.1 258 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 259 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %rise.2 = local;
+        symbol [ rise %rise.2 259 12 16 ];
+        %tmp.3 = self;
+        symbol [ formatMoment %tmp.4 259 19 31 ];
+        %tmp.4 = getv function %tmp.3 :formatMoment;
+        symbol [ _data %tmp.6 259 32 37 ];
+        %tmp.6 = getv ? :_data;
+        symbol [ sunrise %tmp.7 259 38 45 ];
+        %tmp.7 = getv %tmp.6 :sunrise;
+        %tmp.8 = invoke %tmp.3 %tmp.4(%tmp.7);
+        lputv %rise.2 %tmp.8;
+        symbol [ rise %rise.2 259 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 260 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %set.3 = local;
+        symbol [ set %set.3 260 12 15 ];
+        %tmp.9 = self;
+        symbol [ formatMoment %tmp.10 260 18 30 ];
+        %tmp.10 = getv function %tmp.9 :formatMoment;
+        symbol [ _data %tmp.12 260 31 36 ];
+        %tmp.12 = getv ? :_data;
+        symbol [ sunset %tmp.13 260 37 43 ];
+        %tmp.13 = getv %tmp.12 :sunset;
+        %tmp.14 = invoke %tmp.9 %tmp.10(%tmp.13);
+        lputv %set.3 %tmp.14;
+        symbol [ set %set.3 260 12 15 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 261 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %riseWidth.4 = local;
+        symbol [ riseWidth %riseWidth.4 261 12 21 ];
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 261 24 26 ];
+        symbol [ getTextWidthInPixels %tmp.16 261 27 47 ];
+        %tmp.16 = getv function %tmp.15 :getTextWidthInPixels;
+        %tmp.17 = lgetv %rise.2;
+        symbol [ rise %tmp.17 261 48 52 ];
+        %tmp.18 = lgetv %font.1;
+        symbol [ font %tmp.18 261 54 58 ];
+        %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18);
+        lputv %riseWidth.4 %tmp.19;
+        symbol [ riseWidth %riseWidth.4 261 12 21 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 262 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %setWidth.5 = local;
+        symbol [ setWidth %setWidth.5 262 12 20 ];
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 262 23 25 ];
+        symbol [ getTextWidthInPixels %tmp.21 262 26 46 ];
+        %tmp.21 = getv function %tmp.20 :getTextWidthInPixels;
+        %tmp.22 = lgetv %set.3;
+        symbol [ set %tmp.22 262 47 50 ];
+        %tmp.23 = lgetv %font.1;
+        symbol [ font %tmp.23 262 52 56 ];
+        %tmp.24 = invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23);
+        lputv %setWidth.5 %tmp.24;
+        symbol [ setWidth %setWidth.5 262 12 20 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 264 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %pair.6 = local;
+        symbol [ pair %pair.6 264 12 16 ];
+        symbol [ SUN_MARKER_W %tmp.26 264 19 31 ];
+        %tmp.26 = getv ? :SUN_MARKER_W;
+        symbol [ SUN_MARKER_GAP %tmp.28 264 34 48 ];
+        %tmp.28 = getv ? :SUN_MARKER_GAP;
+        %tmp.29 = add %tmp.26 %tmp.28;
+        lputv %pair.6 %tmp.29;
+        symbol [ pair %pair.6 264 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 265 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop" ]
+        %x.7 = local;
+        symbol [ x %x.7 265 12 13 ];
+        symbol [ CENTER_X %tmp.31 265 16 24 ];
+        %tmp.31 = getv ? :CENTER_X;
+        %tmp.32 = lgetv %pair.6;
+        symbol [ pair %tmp.32 265 28 32 ];
+        %tmp.33 = 2;
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        %tmp.35 = lgetv %riseWidth.4;
+        symbol [ riseWidth %tmp.35 265 39 48 ];
+        %tmp.36 = add %tmp.34 %tmp.35;
+        %tmp.37 = lgetv %setWidth.5;
+        symbol [ setWidth %tmp.37 265 51 59 ];
+        %tmp.38 = add %tmp.36 %tmp.37;
+        symbol [ SUN_PAIR_GAP %tmp.40 265 62 74 ];
+        %tmp.40 = getv ? :SUN_PAIR_GAP;
+        %tmp.41 = add %tmp.38 %tmp.40;
+        %tmp.42 = 2;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        %tmp.44 = sub %tmp.31 %tmp.43;
+        lputv %x.7 %tmp.44;
+        symbol [ x %x.7 265 12 13 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 267 8 ]
+        %tmp.45 = self;
+        symbol [ drawSunMarker %tmp.46 267 8 21 ];
+        %tmp.46 = getv function %tmp.45 :drawSunMarker;
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 267 22 24 ];
+        %tmp.48 = lgetv %x.7;
+        symbol [ x %tmp.48 267 26 27 ];
+        symbol [ SUN_MARKER_W %tmp.50 267 30 42 ];
+        %tmp.50 = getv ? :SUN_MARKER_W;
+        %tmp.51 = 2;
+        %tmp.52 = div %tmp.50 %tmp.51;
+        %tmp.53 = add %tmp.48 %tmp.52;
+        symbol [ SUN_Y %tmp.55 267 48 53 ];
+        %tmp.55 = getv ? :SUN_Y;
+        %tmp.56 = true;
+        symbol [ COLOR_SUNRISE %tmp.58 267 61 74 ];
+        %tmp.58 = getv ? :COLOR_SUNRISE;
+        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.53, %tmp.55, %tmp.56, %tmp.58);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 268 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 268 8 10 ];
+        symbol [ setColor %tmp.60 268 11 19 ];
+        %tmp.60 = getv function %tmp.59 :setColor;
+        symbol [ COLOR_SUNRISE %tmp.62 268 20 33 ];
+        %tmp.62 = getv ? :COLOR_SUNRISE;
+        symbol [ Graphics %tmp.63 268 35 43 ];
+        %tmp.63 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.64 268 44 61 ];
+        %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
+        invoke %tmp.59 %tmp.60(%tmp.62, %tmp.64);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 269 8 ]
+        %tmp.65 = lgetv %dc;
+        symbol [ dc %tmp.65 269 8 10 ];
+        symbol [ drawText %tmp.66 269 11 19 ];
+        %tmp.66 = getv function %tmp.65 :drawText;
+        %tmp.67 = lgetv %x.7;
+        symbol [ x %tmp.67 269 20 21 ];
+        %tmp.68 = lgetv %pair.6;
+        symbol [ pair %tmp.68 269 24 28 ];
+        %tmp.69 = add %tmp.67 %tmp.68;
+        symbol [ SUN_Y %tmp.71 269 30 35 ];
+        %tmp.71 = getv ? :SUN_Y;
+        %tmp.72 = lgetv %font.1;
+        symbol [ font %tmp.72 269 37 41 ];
+        %tmp.73 = lgetv %rise.2;
+        symbol [ rise %tmp.73 269 43 47 ];
+        symbol [ Graphics %tmp.74 270 12 20 ];
+        %tmp.74 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.75 270 21 38 ];
+        %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.76 270 41 49 ];
+        %tmp.76 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.77 270 50 70 ];
+        %tmp.77 = getv %tmp.76 :TEXT_JUSTIFY_VCENTER;
+        %tmp.78 = bitor %tmp.75 %tmp.77;
+        invoke %tmp.65 %tmp.66(%tmp.69, %tmp.71, %tmp.72, %tmp.73, %tmp.78);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 272 8 ]
+        %tmp.79 = lgetv %x.7;
+        symbol [ x %tmp.79 272 8 9 ];
+        %tmp.80 = lgetv %pair.6;
+        symbol [ pair %tmp.80 272 13 17 ];
+        %tmp.81 = lgetv %riseWidth.4;
+        symbol [ riseWidth %tmp.81 272 20 29 ];
+        %tmp.82 = add %tmp.80 %tmp.81;
+        symbol [ SUN_PAIR_GAP %tmp.84 272 32 44 ];
+        %tmp.84 = getv ? :SUN_PAIR_GAP;
+        %tmp.85 = add %tmp.82 %tmp.84;
+        %tmp.86 = add %tmp.79 %tmp.85;
+        lputv %x.7 %tmp.86;
+        symbol [ x %x.7 272 8 9 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 273 8 ]
+        %tmp.87 = self;
+        symbol [ drawSunMarker %tmp.88 273 8 21 ];
+        %tmp.88 = getv function %tmp.87 :drawSunMarker;
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 273 22 24 ];
+        %tmp.90 = lgetv %x.7;
+        symbol [ x %tmp.90 273 26 27 ];
+        symbol [ SUN_MARKER_W %tmp.92 273 30 42 ];
+        %tmp.92 = getv ? :SUN_MARKER_W;
+        %tmp.93 = 2;
+        %tmp.94 = div %tmp.92 %tmp.93;
+        %tmp.95 = add %tmp.90 %tmp.94;
+        symbol [ SUN_Y %tmp.97 273 48 53 ];
+        %tmp.97 = getv ? :SUN_Y;
+        %tmp.98 = false;
+        symbol [ COLOR_SUNSET %tmp.100 273 62 74 ];
+        %tmp.100 = getv ? :COLOR_SUNSET;
+        invoke %tmp.87 %tmp.88(%tmp.89, %tmp.95, %tmp.97, %tmp.98, %tmp.100);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 274 8 ]
+        %tmp.101 = lgetv %dc;
+        symbol [ dc %tmp.101 274 8 10 ];
+        symbol [ setColor %tmp.102 274 11 19 ];
+        %tmp.102 = getv function %tmp.101 :setColor;
+        symbol [ COLOR_SUNSET %tmp.104 274 20 32 ];
+        %tmp.104 = getv ? :COLOR_SUNSET;
+        symbol [ Graphics %tmp.105 274 34 42 ];
+        %tmp.105 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.106 274 43 60 ];
+        %tmp.106 = getv %tmp.105 :COLOR_TRANSPARENT;
+        invoke %tmp.101 %tmp.102(%tmp.104, %tmp.106);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 275 8 ]
+        %tmp.107 = lgetv %dc;
+        symbol [ dc %tmp.107 275 8 10 ];
+        symbol [ drawText %tmp.108 275 11 19 ];
+        %tmp.108 = getv function %tmp.107 :drawText;
+        %tmp.109 = lgetv %x.7;
+        symbol [ x %tmp.109 275 20 21 ];
+        %tmp.110 = lgetv %pair.6;
+        symbol [ pair %tmp.110 275 24 28 ];
+        %tmp.111 = add %tmp.109 %tmp.110;
+        symbol [ SUN_Y %tmp.113 275 30 35 ];
+        %tmp.113 = getv ? :SUN_Y;
+        %tmp.114 = lgetv %font.1;
+        symbol [ font %tmp.114 275 37 41 ];
+        %tmp.115 = lgetv %set.3;
+        symbol [ set %tmp.115 275 43 46 ];
+        symbol [ Graphics %tmp.116 276 12 20 ];
+        %tmp.116 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.117 276 21 38 ];
+        %tmp.117 = getv %tmp.116 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.118 276 41 49 ];
+        %tmp.118 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.119 276 50 70 ];
+        %tmp.119 = getv %tmp.118 :TEXT_JUSTIFY_VCENTER;
+        %tmp.120 = bitor %tmp.117 %tmp.119;
+        invoke %tmp.107 %tmp.108(%tmp.111, %tmp.113, %tmp.114, %tmp.115, %tmp.120);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_257_52_277_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 279; @symbol_functiondef = [drawSunMarker,279,21,34]; @symbol_param<0> = [dc,279,35,37]; @symbol_param<0>_type<0> = [Dc,279,41,43]; @symbol_param<1> = [x,279,45,46]; @symbol_param<1>_type<0> = [Number,279,50,56]; @symbol_param<2> = [y,279,58,59]; @symbol_param<2>_type<0> = [Number,279,63,69]; @symbol_param<3> = [rising,280,35,41]; @symbol_param<3>_type<0> = [Boolean,280,45,52]; @symbol_param<4> = [color,280,54,59]; @symbol_param<4>_type<0> = [Number,280,63,69]; ]
+    private
+    function drawSunMarker(dc as Dc, x as Number, y as Number, rising as Boolean, color as Number) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_280_79_285_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 281 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 281 8 10 ];
+        symbol [ setColor %tmp.2 281 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 281 20 25 ];
+        symbol [ Graphics %tmp.4 281 27 35 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 281 36 53 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 282 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_280_79_285_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_280_79_285_4_stop" ]
+        %tip.1 = local;
+        symbol [ tip %tip.1 282 12 15 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_begin:
+        %tmp.6 = lgetv %rising;
+        symbol [ rising %tmp.6 282 18 24 ];
+        bf %tmp.6 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_else_false;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_true:
+        %tmp.7 = lgetv %y;
+        symbol [ y %tmp.7 282 27 28 ];
+        %tmp.8 = 5;
+        %tmp.9 = sub %tmp.7 %tmp.8;
+        push %tmp.9;
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_else_false:
+        %tmp.10 = lgetv %y;
+        symbol [ y %tmp.10 282 35 36 ];
+        %tmp.11 = 5;
+        %tmp.12 = add %tmp.10 %tmp.11;
+        push %tmp.12;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_end:
+        %tmp.13 = phi [%tmp.6 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_begin] [%tmp.9 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_true] [%tmp.12 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_else_false] [%tmp.13 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_282_18_282_39_end];
+        lputv %tip.1 %tmp.13;
+        symbol [ tip %tip.1 282 12 15 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 283 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_280_79_285_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_280_79_285_4_stop" ]
+        %base.2 = local;
+        symbol [ base %base.2 283 12 16 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_begin:
+        %tmp.14 = lgetv %rising;
+        symbol [ rising %tmp.14 283 19 25 ];
+        bf %tmp.14 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_else_false;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_true:
+        %tmp.15 = lgetv %y;
+        symbol [ y %tmp.15 283 28 29 ];
+        %tmp.16 = 4;
+        %tmp.17 = add %tmp.15 %tmp.16;
+        push %tmp.17;
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_else_false:
+        %tmp.18 = lgetv %y;
+        symbol [ y %tmp.18 283 36 37 ];
+        %tmp.19 = 4;
+        %tmp.20 = sub %tmp.18 %tmp.19;
+        push %tmp.20;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_end:
+        %tmp.21 = phi [%tmp.14 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_begin] [%tmp.17 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_true] [%tmp.20 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_else_false] [%tmp.21 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_283_19_283_40_end];
+        lputv %base.2 %tmp.21;
+        symbol [ base %base.2 283 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 284 8 ]
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 284 8 10 ];
+        symbol [ fillPolygon %tmp.23 284 11 22 ];
+        %tmp.23 = getv function %tmp.22 :fillPolygon;
+        %tmp.24 = newa 3 Array<Point2D>;
+        symbol [ Array %tmp.24 284 67 72 ];
+        symbol [ Point2D %tmp.24 284 73 80 ];
+        %tmp.25 = newa 2;
+        %tmp.26 = lgetv %x;
+        symbol [ x %tmp.26 284 25 26 ];
+        %tmp.27 = 6;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        %tmp.29 = dup %tmp.25;
+        %tmp.30 = aputv %tmp.29 0 %tmp.28;
+        %tmp.31 = lgetv %base.2;
+        symbol [ base %tmp.31 284 32 36 ];
+        %tmp.32 = dup %tmp.30;
+        %tmp.33 = aputv %tmp.32 1 %tmp.31;
+        %tmp.34 = dup %tmp.24;
+        %tmp.35 = aputv %tmp.34 0 %tmp.33;
+        %tmp.36 = newa 2;
+        %tmp.37 = lgetv %x;
+        symbol [ x %tmp.37 284 40 41 ];
+        %tmp.38 = 6;
+        %tmp.39 = add %tmp.37 %tmp.38;
+        %tmp.40 = dup %tmp.36;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        %tmp.42 = lgetv %base.2;
+        symbol [ base %tmp.42 284 47 51 ];
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 1 %tmp.42;
+        %tmp.45 = dup %tmp.35;
+        %tmp.46 = aputv %tmp.45 1 %tmp.44;
+        %tmp.47 = newa 2;
+        %tmp.48 = lgetv %x;
+        symbol [ x %tmp.48 284 55 56 ];
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        %tmp.51 = lgetv %tip.1;
+        symbol [ tip %tmp.51 284 58 61 ];
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 1 %tmp.51;
+        %tmp.54 = dup %tmp.46;
+        %tmp.55 = aputv %tmp.54 2 %tmp.53;
+        invoke %tmp.22 %tmp.23(%tmp.55);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_280_79_285_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 287; @symbol_functiondef = [drawSteps,287,21,30]; @symbol_param<0> = [dc,287,31,33]; @symbol_param<0>_type<0> = [Dc,287,37,39]; ]
+    private
+    function drawSteps(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 288 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop" ]
+        %font.1 = local;
+        symbol [ font %font.1 288 12 16 ];
+        symbol [ Graphics %tmp.1 288 19 27 ];
+        %tmp.1 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.2 288 28 38 ];
+        %tmp.2 = getv %tmp.1 :FONT_XTINY;
+        lputv %font.1 %tmp.2;
+        symbol [ font %font.1 288 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 289 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop" ]
+        %count.2 = local;
+        symbol [ count %count.2 289 12 17 ];
+        %tmp.3 = self;
+        symbol [ withThousands %tmp.4 289 20 33 ];
+        %tmp.4 = getv function %tmp.3 :withThousands;
+        symbol [ _data %tmp.6 289 34 39 ];
+        %tmp.6 = getv ? :_data;
+        symbol [ steps %tmp.7 289 40 45 ];
+        %tmp.7 = getv %tmp.6 :steps;
+        %tmp.8 = invoke %tmp.3 %tmp.4(%tmp.7);
+        lputv %count.2 %tmp.8;
+        symbol [ count %count.2 289 12 17 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 290 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop" ]
+        %goal.3 = local;
+        symbol [ goal %goal.3 290 12 16 ];
+        symbol [ _data %tmp.10 290 19 24 ];
+        %tmp.10 = getv ? :_data;
+        symbol [ stepGoal %tmp.11 290 25 33 ];
+        %tmp.11 = getv %tmp.10 :stepGoal;
+        lputv %goal.3 %tmp.11;
+        symbol [ goal %goal.3 290 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 292 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_8_297_8_if_stmt:
+        %tmp.12 = lgetv %goal.3;
+        symbol [ goal %tmp.12 292 12 16 ];
+        %tmp.13 = 0;
+        %tmp.14 = lte %tmp.12 %tmp.13;
+        bf %tmp.14 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_8_297_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_8_297_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_23_297_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 293 12 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 293 12 14 ];
+        symbol [ setColor %tmp.16 293 15 23 ];
+        %tmp.16 = getv function %tmp.15 :setColor;
+        symbol [ COLOR_TEAL %tmp.18 293 24 34 ];
+        %tmp.18 = getv ? :COLOR_TEAL;
+        symbol [ Graphics %tmp.19 293 36 44 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.20 293 45 62 ];
+        %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
+        invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 294 12 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 294 12 14 ];
+        symbol [ drawText %tmp.22 294 15 23 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        symbol [ CENTER_X %tmp.24 294 24 32 ];
+        %tmp.24 = getv ? :CENTER_X;
+        symbol [ STEPS_Y %tmp.26 294 34 41 ];
+        %tmp.26 = getv ? :STEPS_Y;
+        %tmp.27 = lgetv %font.1;
+        symbol [ font %tmp.27 294 43 47 ];
+        %tmp.28 = lgetv %count.2;
+        symbol [ count %tmp.28 294 49 54 ];
+        symbol [ Graphics %tmp.29 295 16 24 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.30 295 25 44 ];
+        %tmp.30 = getv %tmp.29 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.31 295 47 55 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.32 295 56 76 ];
+        %tmp.32 = getv %tmp.31 :TEXT_JUSTIFY_VCENTER;
+        %tmp.33 = bitor %tmp.30 %tmp.32;
+        invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26, %tmp.27, %tmp.28, %tmp.33);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 296 12 ]
+        ret ?;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_23_297_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_8_297_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_292_8_297_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 302 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop" ]
+        %target.4 = local;
+        symbol [ target %target.4 302 12 18 ];
+        symbol [ Lang %tmp.34 302 21 25 ];
+        %tmp.34 = getm $.Toybox.Lang;
+        symbol [ format %tmp.35 302 26 32 ];
+        %tmp.35 = getv function %tmp.34 :format;
+        %tmp.36 = " / $1$";
+        %tmp.37 = newa 1;
+        %tmp.38 = self;
+        symbol [ withThousands %tmp.39 302 44 57 ];
+        %tmp.39 = getv function %tmp.38 :withThousands;
+        %tmp.40 = lgetv %goal.3;
+        symbol [ goal %tmp.40 302 58 62 ];
+        %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
+        %tmp.42 = dup %tmp.37;
+        %tmp.43 = aputv %tmp.42 0 %tmp.41;
+        %tmp.44 = invoke %tmp.34 %tmp.35(%tmp.36, %tmp.43);
+        lputv %target.4 %tmp.44;
+        symbol [ target %target.4 302 12 18 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 303 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop" ]
+        %countWidth.5 = local;
+        symbol [ countWidth %countWidth.5 303 12 22 ];
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 303 25 27 ];
+        symbol [ getTextWidthInPixels %tmp.46 303 28 48 ];
+        %tmp.46 = getv function %tmp.45 :getTextWidthInPixels;
+        %tmp.47 = lgetv %count.2;
+        symbol [ count %tmp.47 303 49 54 ];
+        %tmp.48 = lgetv %font.1;
+        symbol [ font %tmp.48 303 56 60 ];
+        %tmp.49 = invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48);
+        lputv %countWidth.5 %tmp.49;
+        symbol [ countWidth %countWidth.5 303 12 22 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 304 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop" ]
+        %left.6 = local;
+        symbol [ left %left.6 304 12 16 ];
+        symbol [ CENTER_X %tmp.51 304 19 27 ];
+        %tmp.51 = getv ? :CENTER_X;
+        %tmp.52 = lgetv %countWidth.5;
+        symbol [ countWidth %tmp.52 304 31 41 ];
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 304 44 46 ];
+        symbol [ getTextWidthInPixels %tmp.54 304 47 67 ];
+        %tmp.54 = getv function %tmp.53 :getTextWidthInPixels;
+        %tmp.55 = lgetv %target.4;
+        symbol [ target %tmp.55 304 68 74 ];
+        %tmp.56 = lgetv %font.1;
+        symbol [ font %tmp.56 304 76 80 ];
+        %tmp.57 = invoke %tmp.53 %tmp.54(%tmp.55, %tmp.56);
+        %tmp.58 = add %tmp.52 %tmp.57;
+        %tmp.59 = 2;
+        %tmp.60 = div %tmp.58 %tmp.59;
+        %tmp.61 = sub %tmp.51 %tmp.60;
+        lputv %left.6 %tmp.61;
+        symbol [ left %left.6 304 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 306 8 ]
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 306 8 10 ];
+        symbol [ setColor %tmp.63 306 11 19 ];
+        %tmp.63 = getv function %tmp.62 :setColor;
+        symbol [ COLOR_TEAL %tmp.65 306 20 30 ];
+        %tmp.65 = getv ? :COLOR_TEAL;
+        symbol [ Graphics %tmp.66 306 32 40 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.67 306 41 58 ];
+        %tmp.67 = getv %tmp.66 :COLOR_TRANSPARENT;
+        invoke %tmp.62 %tmp.63(%tmp.65, %tmp.67);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 307 8 ]
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 307 8 10 ];
+        symbol [ drawText %tmp.69 307 11 19 ];
+        %tmp.69 = getv function %tmp.68 :drawText;
+        %tmp.70 = lgetv %left.6;
+        symbol [ left %tmp.70 307 20 24 ];
+        symbol [ STEPS_Y %tmp.72 307 26 33 ];
+        %tmp.72 = getv ? :STEPS_Y;
+        %tmp.73 = lgetv %font.1;
+        symbol [ font %tmp.73 307 35 39 ];
+        %tmp.74 = lgetv %count.2;
+        symbol [ count %tmp.74 307 41 46 ];
+        symbol [ Graphics %tmp.75 308 12 20 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.76 308 21 38 ];
+        %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.77 308 41 49 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.78 308 50 70 ];
+        %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_VCENTER;
+        %tmp.79 = bitor %tmp.76 %tmp.78;
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.72, %tmp.73, %tmp.74, %tmp.79);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 310 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 310 8 10 ];
+        symbol [ setColor %tmp.81 310 11 19 ];
+        %tmp.81 = getv function %tmp.80 :setColor;
+        symbol [ COLOR_LABEL %tmp.83 310 20 31 ];
+        %tmp.83 = getv ? :COLOR_LABEL;
+        symbol [ Graphics %tmp.84 310 33 41 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.85 310 42 59 ];
+        %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+        invoke %tmp.80 %tmp.81(%tmp.83, %tmp.85);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 311 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 311 8 10 ];
+        symbol [ drawText %tmp.87 311 11 19 ];
+        %tmp.87 = getv function %tmp.86 :drawText;
+        %tmp.88 = lgetv %left.6;
+        symbol [ left %tmp.88 311 20 24 ];
+        %tmp.89 = lgetv %countWidth.5;
+        symbol [ countWidth %tmp.89 311 27 37 ];
+        %tmp.90 = add %tmp.88 %tmp.89;
+        symbol [ STEPS_Y %tmp.92 311 39 46 ];
+        %tmp.92 = getv ? :STEPS_Y;
+        %tmp.93 = lgetv %font.1;
+        symbol [ font %tmp.93 311 48 52 ];
+        %tmp.94 = lgetv %target.4;
+        symbol [ target %tmp.94 311 54 60 ];
+        symbol [ Graphics %tmp.95 312 12 20 ];
+        %tmp.95 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.96 312 21 38 ];
+        %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.97 312 41 49 ];
+        %tmp.97 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.98 312 50 70 ];
+        %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_VCENTER;
+        %tmp.99 = bitor %tmp.96 %tmp.98;
+        invoke %tmp.86 %tmp.87(%tmp.90, %tmp.92, %tmp.93, %tmp.94, %tmp.99);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_287_49_313_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 315; @symbol_functiondef = [drawBattery,315,21,32]; @symbol_param<0> = [dc,315,33,35]; @symbol_param<0>_type<0> = [Dc,315,39,41]; ]
+    private
+    function drawBattery(dc as Dc) as Void {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 316 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %percent.1 = local;
+        symbol [ percent %percent.1 316 12 19 ];
+        symbol [ _data %tmp.2 316 22 27 ];
+        %tmp.2 = getv ? :_data;
+        symbol [ battery %tmp.3 316 28 35 ];
+        %tmp.3 = getv %tmp.2 :battery;
+        lputv %percent.1 %tmp.3;
+        symbol [ percent %percent.1 316 12 19 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 317 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %font.2 = local;
+        symbol [ font %font.2 317 12 16 ];
+        symbol [ Graphics %tmp.4 317 19 27 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.5 317 28 38 ];
+        %tmp.5 = getv %tmp.4 :FONT_XTINY;
+        lputv %font.2 %tmp.5;
+        symbol [ font %font.2 317 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 318 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %text.3 = local;
+        symbol [ text %text.3 318 12 16 ];
+        symbol [ Lang %tmp.6 318 19 23 ];
+        %tmp.6 = getm $.Toybox.Lang;
+        symbol [ format %tmp.7 318 24 30 ];
+        %tmp.7 = getv function %tmp.6 :format;
+        %tmp.8 = "$1$%";
+        %tmp.9 = newa 1;
+        %tmp.10 = lgetv %percent.1;
+        symbol [ percent %tmp.10 318 40 47 ];
+        symbol [ format %tmp.11 318 48 54 ];
+        %tmp.11 = getv function %tmp.10 :format;
+        %tmp.12 = "%d";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 0 %tmp.13;
+        %tmp.16 = invoke %tmp.6 %tmp.7(%tmp.8, %tmp.15);
+        lputv %text.3 %tmp.16;
+        symbol [ text %text.3 318 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 320 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %shell.4 = local;
+        symbol [ shell %shell.4 320 12 17 ];
+        symbol [ BATTERY_W %tmp.18 320 20 29 ];
+        %tmp.18 = getv ? :BATTERY_W;
+        symbol [ BATTERY_NUB_W %tmp.20 320 32 45 ];
+        %tmp.20 = getv ? :BATTERY_NUB_W;
+        %tmp.21 = add %tmp.18 %tmp.20;
+        lputv %shell.4 %tmp.21;
+        symbol [ shell %shell.4 320 12 17 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 321 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %left.5 = local;
+        symbol [ left %left.5 321 12 16 ];
+        symbol [ CENTER_X %tmp.23 321 19 27 ];
+        %tmp.23 = getv ? :CENTER_X;
+        %tmp.24 = lgetv %shell.4;
+        symbol [ shell %tmp.24 322 15 20 ];
+        symbol [ BATTERY_GAP %tmp.26 322 23 34 ];
+        %tmp.26 = getv ? :BATTERY_GAP;
+        %tmp.27 = add %tmp.24 %tmp.26;
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 322 37 39 ];
+        symbol [ getTextWidthInPixels %tmp.29 322 40 60 ];
+        %tmp.29 = getv function %tmp.28 :getTextWidthInPixels;
+        %tmp.30 = lgetv %text.3;
+        symbol [ text %tmp.30 322 61 65 ];
+        %tmp.31 = lgetv %font.2;
+        symbol [ font %tmp.31 322 67 71 ];
+        %tmp.32 = invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31);
+        %tmp.33 = add %tmp.27 %tmp.32;
+        %tmp.34 = 2;
+        %tmp.35 = div %tmp.33 %tmp.34;
+        %tmp.36 = sub %tmp.23 %tmp.35;
+        lputv %left.5 %tmp.36;
+        symbol [ left %left.5 321 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 323 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %top.6 = local;
+        symbol [ top %top.6 323 12 15 ];
+        symbol [ BATTERY_Y %tmp.38 323 18 27 ];
+        %tmp.38 = getv ? :BATTERY_Y;
+        symbol [ BATTERY_H %tmp.40 323 30 39 ];
+        %tmp.40 = getv ? :BATTERY_H;
+        %tmp.41 = 2;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = sub %tmp.38 %tmp.42;
+        lputv %top.6 %tmp.43;
+        symbol [ top %top.6 323 12 15 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 325 8 ]
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 325 8 10 ];
+        symbol [ setColor %tmp.45 325 11 19 ];
+        %tmp.45 = getv function %tmp.44 :setColor;
+        symbol [ COLOR_LABEL %tmp.47 325 20 31 ];
+        %tmp.47 = getv ? :COLOR_LABEL;
+        symbol [ Graphics %tmp.48 325 33 41 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.49 325 42 59 ];
+        %tmp.49 = getv %tmp.48 :COLOR_TRANSPARENT;
+        invoke %tmp.44 %tmp.45(%tmp.47, %tmp.49);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 326 8 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 326 8 10 ];
+        symbol [ setPenWidth %tmp.51 326 11 22 ];
+        %tmp.51 = getv function %tmp.50 :setPenWidth;
+        %tmp.52 = 1;
+        invoke %tmp.50 %tmp.51(%tmp.52);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 327 8 ]
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 327 8 10 ];
+        symbol [ drawRectangle %tmp.54 327 11 24 ];
+        %tmp.54 = getv function %tmp.53 :drawRectangle;
+        %tmp.55 = lgetv %left.5;
+        symbol [ left %tmp.55 327 25 29 ];
+        %tmp.56 = lgetv %top.6;
+        symbol [ top %tmp.56 327 31 34 ];
+        symbol [ BATTERY_W %tmp.58 327 36 45 ];
+        %tmp.58 = getv ? :BATTERY_W;
+        symbol [ BATTERY_H %tmp.60 327 47 56 ];
+        %tmp.60 = getv ? :BATTERY_H;
+        invoke %tmp.53 %tmp.54(%tmp.55, %tmp.56, %tmp.58, %tmp.60);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 328 8 ]
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 328 8 10 ];
+        symbol [ fillRectangle %tmp.62 328 11 24 ];
+        %tmp.62 = getv function %tmp.61 :fillRectangle;
+        %tmp.63 = lgetv %left.5;
+        symbol [ left %tmp.63 328 25 29 ];
+        symbol [ BATTERY_W %tmp.65 328 32 41 ];
+        %tmp.65 = getv ? :BATTERY_W;
+        %tmp.66 = add %tmp.63 %tmp.65;
+        symbol [ BATTERY_Y %tmp.68 328 43 52 ];
+        %tmp.68 = getv ? :BATTERY_Y;
+        symbol [ BATTERY_NUB_H %tmp.70 328 55 68 ];
+        %tmp.70 = getv ? :BATTERY_NUB_H;
+        %tmp.71 = 2;
+        %tmp.72 = div %tmp.70 %tmp.71;
+        %tmp.73 = sub %tmp.68 %tmp.72;
+        symbol [ BATTERY_NUB_W %tmp.75 329 12 25 ];
+        %tmp.75 = getv ? :BATTERY_NUB_W;
+        symbol [ BATTERY_NUB_H %tmp.77 329 27 40 ];
+        %tmp.77 = getv ? :BATTERY_NUB_H;
+        invoke %tmp.61 %tmp.62(%tmp.66, %tmp.73, %tmp.75, %tmp.77);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 331 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %inner.7 = local;
+        symbol [ inner %inner.7 331 12 17 ];
+        symbol [ BATTERY_W %tmp.79 331 20 29 ];
+        %tmp.79 = getv ? :BATTERY_W;
+        symbol [ BATTERY_WALL %tmp.81 331 32 44 ];
+        %tmp.81 = getv ? :BATTERY_WALL;
+        %tmp.82 = 2;
+        %tmp.83 = mul %tmp.81 %tmp.82;
+        %tmp.84 = sub %tmp.79 %tmp.83;
+        lputv %inner.7 %tmp.84;
+        symbol [ inner %inner.7 331 12 17 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 332 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop" ]
+        %filled.8 = local;
+        symbol [ filled %filled.8 332 12 18 ];
+        %tmp.85 = lgetv %inner.7;
+        symbol [ inner %tmp.85 332 22 27 ];
+        %tmp.86 = lgetv %percent.1;
+        symbol [ percent %tmp.86 332 30 37 ];
+        %tmp.87 = mul %tmp.85 %tmp.86;
+        %tmp.88 = 100;
+        %tmp.89 = div %tmp.87 %tmp.88;
+        lputv %filled.8 %tmp.89;
+        symbol [ filled %filled.8 332 12 18 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 333 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_8_337_8_if_stmt:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_12_333_36_begin:
+        %tmp.90 = lgetv %filled.8;
+        symbol [ filled %tmp.90 333 12 18 ];
+        %tmp.91 = 1;
+        %tmp.92 = lt %tmp.90 %tmp.91;
+        bf %tmp.92 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_8_337_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_26_333_36_true:
+        %tmp.93 = lgetv %percent.1;
+        symbol [ percent %tmp.93 333 26 33 ];
+        %tmp.94 = 0;
+        %tmp.95 = gt %tmp.93 %tmp.94;
+        push %tmp.95;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_26_333_36_end:
+        %tmp.96 = phi [%tmp.92 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_12_333_36_begin] [%tmp.95 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_26_333_36_true] [%tmp.96 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_26_333_36_end];
+        bf %tmp.96 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_8_337_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_8_337_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_39_337_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 336 12 ]
+        %tmp.97 = 1;
+        lputv %filled.8 %tmp.97;
+        symbol [ filled %filled.8 336 12 18 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_39_337_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_8_337_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_333_8_337_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 338 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_8_343_8_if_stmt:
+        %tmp.98 = lgetv %filled.8;
+        symbol [ filled %tmp.98 338 12 18 ];
+        %tmp.99 = 0;
+        %tmp.100 = gt %tmp.98 %tmp.99;
+        bf %tmp.100 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_8_343_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_8_343_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_24_343_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 339 12 ]
+        %tmp.101 = lgetv %dc;
+        symbol [ dc %tmp.101 339 12 14 ];
+        symbol [ setColor %tmp.102 339 15 23 ];
+        %tmp.102 = getv function %tmp.101 :setColor;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_begin:
+        %tmp.103 = lgetv %percent.1;
+        symbol [ percent %tmp.103 339 24 31 ];
+        %tmp.104 = 20;
+        %tmp.105 = lte %tmp.103 %tmp.104;
+        bf %tmp.105 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_else_false;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_true:
+        symbol [ COLOR_BATTERY_LOW %tmp.107 339 40 57 ];
+        %tmp.107 = getv ? :COLOR_BATTERY_LOW;
+        push %tmp.107;
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_else_false:
+        symbol [ COLOR_BATTERY_OK %tmp.109 339 60 76 ];
+        %tmp.109 = getv ? :COLOR_BATTERY_OK;
+        push %tmp.109;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_end:
+        %tmp.110 = phi [%tmp.105 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_begin] [%tmp.107 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_true] [%tmp.109 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_else_false] [%tmp.110 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_339_24_339_60_end];
+        symbol [ Graphics %tmp.111 340 16 24 ];
+        %tmp.111 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.112 340 25 42 ];
+        %tmp.112 = getv %tmp.111 :COLOR_TRANSPARENT;
+        invoke %tmp.101 %tmp.102(%tmp.110, %tmp.112);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 341 12 ]
+        %tmp.113 = lgetv %dc;
+        symbol [ dc %tmp.113 341 12 14 ];
+        symbol [ fillRectangle %tmp.114 341 15 28 ];
+        %tmp.114 = getv function %tmp.113 :fillRectangle;
+        %tmp.115 = lgetv %left.5;
+        symbol [ left %tmp.115 341 29 33 ];
+        symbol [ BATTERY_WALL %tmp.117 341 36 48 ];
+        %tmp.117 = getv ? :BATTERY_WALL;
+        %tmp.118 = add %tmp.115 %tmp.117;
+        %tmp.119 = lgetv %top.6;
+        symbol [ top %tmp.119 341 50 53 ];
+        symbol [ BATTERY_WALL %tmp.121 341 56 68 ];
+        %tmp.121 = getv ? :BATTERY_WALL;
+        %tmp.122 = add %tmp.119 %tmp.121;
+        %tmp.123 = lgetv %filled.8;
+        symbol [ filled %tmp.123 342 16 22 ];
+        symbol [ BATTERY_H %tmp.125 342 24 33 ];
+        %tmp.125 = getv ? :BATTERY_H;
+        symbol [ BATTERY_WALL %tmp.127 342 36 48 ];
+        %tmp.127 = getv ? :BATTERY_WALL;
+        %tmp.128 = 2;
+        %tmp.129 = mul %tmp.127 %tmp.128;
+        %tmp.130 = sub %tmp.125 %tmp.129;
+        invoke %tmp.113 %tmp.114(%tmp.118, %tmp.122, %tmp.123, %tmp.130);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_24_343_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_8_343_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_338_8_343_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 345 8 ]
+        %tmp.131 = lgetv %dc;
+        symbol [ dc %tmp.131 345 8 10 ];
+        symbol [ setColor %tmp.132 345 11 19 ];
+        %tmp.132 = getv function %tmp.131 :setColor;
+        symbol [ COLOR_LABEL %tmp.134 345 20 31 ];
+        %tmp.134 = getv ? :COLOR_LABEL;
+        symbol [ Graphics %tmp.135 345 33 41 ];
+        %tmp.135 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.136 345 42 59 ];
+        %tmp.136 = getv %tmp.135 :COLOR_TRANSPARENT;
+        invoke %tmp.131 %tmp.132(%tmp.134, %tmp.136);
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 346 8 ]
+        %tmp.137 = lgetv %dc;
+        symbol [ dc %tmp.137 346 8 10 ];
+        symbol [ drawText %tmp.138 346 11 19 ];
+        %tmp.138 = getv function %tmp.137 :drawText;
+        %tmp.139 = lgetv %left.5;
+        symbol [ left %tmp.139 346 20 24 ];
+        %tmp.140 = lgetv %shell.4;
+        symbol [ shell %tmp.140 346 27 32 ];
+        %tmp.141 = add %tmp.139 %tmp.140;
+        symbol [ BATTERY_GAP %tmp.143 346 35 46 ];
+        %tmp.143 = getv ? :BATTERY_GAP;
+        %tmp.144 = add %tmp.141 %tmp.143;
+        symbol [ BATTERY_Y %tmp.146 346 48 57 ];
+        %tmp.146 = getv ? :BATTERY_Y;
+        %tmp.147 = lgetv %font.2;
+        symbol [ font %tmp.147 346 59 63 ];
+        %tmp.148 = lgetv %text.3;
+        symbol [ text %tmp.148 346 65 69 ];
+        symbol [ Graphics %tmp.149 347 12 20 ];
+        %tmp.149 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.150 347 21 38 ];
+        %tmp.150 = getv %tmp.149 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.151 347 41 49 ];
+        %tmp.151 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.152 347 50 70 ];
+        %tmp.152 = getv %tmp.151 :TEXT_JUSTIFY_VCENTER;
+        %tmp.153 = bitor %tmp.150 %tmp.152;
+        invoke %tmp.137 %tmp.138(%tmp.144, %tmp.146, %tmp.147, %tmp.148, %tmp.153);
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_315_51_348_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 354; @symbol_functiondef = [formatMoment,354,21,33]; @symbol_param<0> = [moment,354,34,40]; @symbol_param<0>_type<0> = [Time,354,44,48]; @symbol_param<0>_type<1> = [Moment,354,49,55]; @symbol_return<0> = [String,354,68,74]; ]
+    private
+    function formatMoment(moment as Time.Moment or Null) as String {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_354_75_367_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 355 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_8_357_8_if_stmt:
+        %tmp.1 = lgetv %moment;
+        symbol [ moment %tmp.1 355 12 18 ];
+        %tmp.2 = null;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_8_357_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_8_357_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_28_357_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 356 12 ]
+        %tmp.4 = "--:--";
+        ret %tmp.4;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_28_357_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_8_357_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_355_8_357_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 358 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_354_75_367_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_354_75_367_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 358 12 16 ];
+        symbol [ Gregorian %tmp.5 358 19 28 ];
+        %tmp.5 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.6 358 29 33 ];
+        %tmp.6 = getv function %tmp.5 :info;
+        %tmp.7 = lgetv %moment;
+        symbol [ moment %tmp.7 358 34 40 ];
+        %tmp.8 = as %tmp.7 Time.Moment;
+        symbol [ Time %tmp.8 358 44 48 ];
+        symbol [ Moment %tmp.8 358 49 55 ];
+        symbol [ Time %tmp.9 358 57 61 ];
+        %tmp.9 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.10 358 62 74 ];
+        %tmp.10 = getv %tmp.9 :FORMAT_SHORT;
+        %tmp.11 = invoke %tmp.5 %tmp.6(%tmp.8, %tmp.10);
+        lputv %info.1 %tmp.11;
+        symbol [ info %info.1 358 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 359 8 ]
+        [ "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_354_75_367_4_start" "_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_354_75_367_4_stop" ]
+        %hour.2 = local;
+        symbol [ hour %hour.2 359 12 16 ];
+        %tmp.12 = lgetv %info.1;
+        symbol [ info %tmp.12 359 19 23 ];
+        symbol [ hour %tmp.13 359 24 28 ];
+        %tmp.13 = getv %tmp.12 :hour;
+        lputv %hour.2 %tmp.13;
+        symbol [ hour %hour.2 359 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 360 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_8_365_8_if_stmt:
+        symbol [ System %tmp.14 360 13 19 ];
+        %tmp.14 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.15 360 20 37 ];
+        %tmp.15 = getv function %tmp.14 :getDeviceSettings;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        symbol [ is24Hour %tmp.17 360 40 48 ];
+        %tmp.17 = getv %tmp.16 :is24Hour;
+        %tmp.18 = not %tmp.17;
+        bf %tmp.18 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_8_365_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_8_365_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_50_365_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 361 12 ]
+        %tmp.19 = lgetv %hour.2;
+        symbol [ hour %tmp.19 361 19 23 ];
+        %tmp.20 = 12;
+        %tmp.21 = mod %tmp.19 %tmp.20;
+        lputv %hour.2 %tmp.21;
+        symbol [ hour %hour.2 361 12 16 ];
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 362 12 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_12_364_12_if_stmt:
+        %tmp.22 = lgetv %hour.2;
+        symbol [ hour %tmp.22 362 16 20 ];
+        %tmp.23 = 0;
+        %tmp.24 = eq %tmp.22 %tmp.23;
+        bf %tmp.24 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_12_364_12_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_12_364_12_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_27_364_12_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 363 16 ]
+        %tmp.25 = 12;
+        lputv %hour.2 %tmp.25;
+        symbol [ hour %hour.2 363 16 20 ];
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_27_364_12_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_12_364_12_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_362_12_364_12_if_end:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_50_365_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_8_365_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_360_8_365_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 366 8 ]
+        symbol [ Lang %tmp.26 366 15 19 ];
+        %tmp.26 = getm $.Toybox.Lang;
+        symbol [ format %tmp.27 366 20 26 ];
+        %tmp.27 = getv function %tmp.26 :format;
+        %tmp.28 = "$1$:$2$";
+        %tmp.29 = newa 2;
+        %tmp.30 = lgetv %hour.2;
+        symbol [ hour %tmp.30 366 39 43 ];
+        symbol [ format %tmp.31 366 44 50 ];
+        %tmp.31 = getv function %tmp.30 :format;
+        %tmp.32 = "%02d";
+        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
+        %tmp.34 = dup %tmp.29;
+        %tmp.35 = aputv %tmp.34 0 %tmp.33;
+        %tmp.36 = lgetv %info.1;
+        symbol [ info %tmp.36 366 60 64 ];
+        symbol [ min %tmp.37 366 65 68 ];
+        %tmp.37 = getv %tmp.36 :min;
+        symbol [ format %tmp.38 366 69 75 ];
+        %tmp.38 = getv function %tmp.37 :format;
+        %tmp.39 = "%02d";
+        %tmp.40 = invoke %tmp.37 %tmp.38(%tmp.39);
+        %tmp.41 = dup %tmp.35;
+        %tmp.42 = aputv %tmp.41 1 %tmp.40;
+        %tmp.43 = invoke %tmp.26 %tmp.27(%tmp.28, %tmp.42);
+        ret %tmp.43;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_354_75_367_4_stop:
+    }
+    [ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 369; @symbol_functiondef = [withThousands,369,21,34]; @symbol_param<0> = [value,369,35,40]; @symbol_param<0>_type<0> = [Number,369,44,50]; @symbol_return<0> = [String,369,55,61]; ]
+    private
+    function withThousands(value as Number) as String {
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_369_62_377_4_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 370 8 ]
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_8_372_8_if_stmt:
+        %tmp.1 = lgetv %value;
+        symbol [ value %tmp.1 370 12 17 ];
+        %tmp.2 = 1000;
+        %tmp.3 = lt %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_8_372_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_8_372_8_if_true:
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_26_372_8_start:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 371 12 ]
+        %tmp.4 = lgetv %value;
+        symbol [ value %tmp.4 371 19 24 ];
+        symbol [ format %tmp.5 371 25 31 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "%d";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        ret %tmp.7;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_26_372_8_stop:
+        goto @_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_8_372_8_if_end;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_370_8_372_8_if_end:
+[ "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" 373 8 ]
+        symbol [ Lang %tmp.8 373 15 19 ];
+        %tmp.8 = getm $.Toybox.Lang;
+        symbol [ format %tmp.9 373 20 26 ];
+        %tmp.9 = getv function %tmp.8 :format;
+        %tmp.10 = "$1$,$2$";
+        %tmp.11 = newa 2;
+        %tmp.12 = lgetv %value;
+        symbol [ value %tmp.12 374 13 18 ];
+        %tmp.13 = 1000;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        symbol [ format %tmp.15 374 27 33 ];
+        %tmp.15 = getv function %tmp.14 :format;
+        %tmp.16 = "%d";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = dup %tmp.11;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = lgetv %value;
+        symbol [ value %tmp.20 375 13 18 ];
+        %tmp.21 = 1000;
+        %tmp.22 = mod %tmp.20 %tmp.21;
+        symbol [ format %tmp.23 375 27 33 ];
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "%03d";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = dup %tmp.19;
+        %tmp.27 = aputv %tmp.26 1 %tmp.25;
+        %tmp.28 = invoke %tmp.8 %tmp.9(%tmp.10, %tmp.27);
+        ret %tmp.28;
+_Users_kevin_pham_Desktop_Garmin_Face_MikuFace_source_MikuFaceView_mc_369_62_377_4_stop:
+    }
+}
+[ @file = "/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc"; @line = 1; ]
+<init> {
+}

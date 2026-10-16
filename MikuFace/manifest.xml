@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="2c0c49e9f9f448cc81ed3fced5ef29bd"
+                    type="watchface"
+                    name="@Strings.AppName"
+                    entry="MikuFaceApp"
+                    launcherIcon="@Drawables.LauncherIcon"
+                    minApiLevel="5.0.1">
+
+        <iq:products>
+            <iq:product id="fenix8solar47mm"/>
+        </iq:products>
+
+        <!-- Positioning is required for CurrentConditions.observationLocationPosition,
+             which feeds Weather.getSunrise/getSunset. Weather itself needs no permission. -->
+        <iq:permissions>
+            <iq:uses-permission id="Positioning"/>
+        </iq:permissions>
+
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+
+        <iq:barrels/>
+
+    </iq:application>
+</iq:manifest>

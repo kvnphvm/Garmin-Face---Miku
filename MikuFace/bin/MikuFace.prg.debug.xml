@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="1" lineNum="43" parent="globals/MikuFaceView" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/bin/gen/006-B4532-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435469" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceApp.mc" id="3" lineNum="5" parent="globals/MikuFaceApp" pc="268435489" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="4" lineNum="22" parent="globals/IdleLoop" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="164" parent="globals/MikuFaceView" pc="268435513" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="165" parent="globals/MikuFaceView" pc="268435516" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="166" parent="globals/MikuFaceView" pc="268435523" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="167" parent="globals/MikuFaceView" pc="268435538" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="169" parent="globals/MikuFaceView" pc="268435539" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="170" parent="globals/MikuFaceView" pc="268435547" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="5" lineNum="171" parent="globals/MikuFaceView" pc="268435558" symbol="idleStopped"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="133" parent="globals/MikuFaceView" pc="268435570" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="134" parent="globals/MikuFaceView" pc="268435573" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="135" parent="globals/MikuFaceView" pc="268435580" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="136" parent="globals/MikuFaceView" pc="268435586" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="138" parent="globals/MikuFaceView" pc="268435587" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="139" parent="globals/MikuFaceView" pc="268435595" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="6" lineNum="140" parent="globals/MikuFaceView" pc="268435606" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="143" parent="globals/MikuFaceView" pc="268435633" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="144" parent="globals/MikuFaceView" pc="268435636" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="145" parent="globals/MikuFaceView" pc="268435643" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="146" parent="globals/MikuFaceView" pc="268435649" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="148" parent="globals/MikuFaceView" pc="268435650" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="149" parent="globals/MikuFaceView" pc="268435658" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="7" lineNum="150" parent="globals/MikuFaceView" pc="268435666" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="201" parent="globals/MikuFaceView" pc="268435678" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="202" parent="globals/MikuFaceView" pc="268435681" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="203" parent="globals/MikuFaceView" pc="268435693" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="204" parent="globals/MikuFaceView" pc="268435701" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="205" parent="globals/MikuFaceView" pc="268435720" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="206" parent="globals/MikuFaceView" pc="268435727" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="207" parent="globals/MikuFaceView" pc="268435734" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="210" parent="globals/MikuFaceView" pc="268435738" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="214" parent="globals/MikuFaceView" pc="268435800" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="215" parent="globals/MikuFaceView" pc="268435804" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="216" parent="globals/MikuFaceView" pc="268435823" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="219" parent="globals/MikuFaceView" pc="268435827" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="8" lineNum="220" parent="globals/MikuFaceView" pc="268435844" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="9" lineNum="369" parent="globals/MikuFaceView" pc="268435866" symbol="&lt;globals/MikuFaceView/&lt;&gt;withThousands&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="9" lineNum="370" parent="globals/MikuFaceView" pc="268435868" symbol="&lt;globals/MikuFaceView/&lt;&gt;withThousands&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="9" lineNum="371" parent="globals/MikuFaceView" pc="268435877" symbol="&lt;globals/MikuFaceView/&lt;&gt;withThousands&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="9" lineNum="373" parent="globals/MikuFaceView" pc="268435892" symbol="&lt;globals/MikuFaceView/&lt;&gt;withThousands&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="10" lineNum="279" parent="globals/MikuFaceView" pc="268435958" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="10" lineNum="281" parent="globals/MikuFaceView" pc="268435961" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="10" lineNum="282" parent="globals/MikuFaceView" pc="268435975" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="10" lineNum="283" parent="globals/MikuFaceView" pc="268435995" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="10" lineNum="284" parent="globals/MikuFaceView" pc="268436015" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="287" parent="globals/MikuFaceView" pc="268436087" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="288" parent="globals/MikuFaceView" pc="268436090" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="289" parent="globals/MikuFaceView" pc="268436093" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="290" parent="globals/MikuFaceView" pc="268436113" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="292" parent="globals/MikuFaceView" pc="268436125" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="293" parent="globals/MikuFaceView" pc="268436132" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="294" parent="globals/MikuFaceView" pc="268436148" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="296" parent="globals/MikuFaceView" pc="268436170" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="302" parent="globals/MikuFaceView" pc="268436171" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="303" parent="globals/MikuFaceView" pc="268436207" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="304" parent="globals/MikuFaceView" pc="268436222" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="306" parent="globals/MikuFaceView" pc="268436247" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="307" parent="globals/MikuFaceView" pc="268436263" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="310" parent="globals/MikuFaceView" pc="268436284" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="11" lineNum="311" parent="globals/MikuFaceView" pc="268436301" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="237" parent="globals/MikuFaceView" pc="268436326" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="238" parent="globals/MikuFaceView" pc="268436329" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="239" parent="globals/MikuFaceView" pc="268436341" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="243" parent="globals/MikuFaceView" pc="268436396" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="244" parent="globals/MikuFaceView" pc="268436413" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="247" parent="globals/MikuFaceView" pc="268436435" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="248" parent="globals/MikuFaceView" pc="268436447" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="12" lineNum="249" parent="globals/MikuFaceView" pc="268436464" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="13" lineNum="117" parent="globals/MikuFaceView" pc="268436500" symbol="onHide"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="13" lineNum="118" parent="globals/MikuFaceView" pc="268436502" symbol="onHide"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="13" lineNum="119" parent="globals/MikuFaceView" pc="268436509" symbol="onHide"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="257" parent="globals/MikuFaceView" pc="268436526" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="258" parent="globals/MikuFaceView" pc="268436529" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="259" parent="globals/MikuFaceView" pc="268436532" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="260" parent="globals/MikuFaceView" pc="268436552" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="261" parent="globals/MikuFaceView" pc="268436572" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="262" parent="globals/MikuFaceView" pc="268436587" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="264" parent="globals/MikuFaceView" pc="268436602" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="265" parent="globals/MikuFaceView" pc="268436606" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="267" parent="globals/MikuFaceView" pc="268436629" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="268" parent="globals/MikuFaceView" pc="268436653" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="269" parent="globals/MikuFaceView" pc="268436670" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="272" parent="globals/MikuFaceView" pc="268436693" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="273" parent="globals/MikuFaceView" pc="268436706" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="274" parent="globals/MikuFaceView" pc="268436730" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="14" lineNum="275" parent="globals/MikuFaceView" pc="268436747" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="15" lineNum="122" parent="globals/MikuFaceView" pc="268436771" symbol="onExitSleep"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="15" lineNum="123" parent="globals/MikuFaceView" pc="268436773" symbol="onExitSleep"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="16" lineNum="113" parent="globals/MikuFaceView" pc="268436781" symbol="onShow"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="16" lineNum="114" parent="globals/MikuFaceView" pc="268436783" symbol="onShow"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="17" lineNum="98" parent="globals/MikuFaceView" pc="268436791" symbol="onLayout"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="17" lineNum="99" parent="globals/MikuFaceView" pc="268436794" symbol="onLayout"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="17" lineNum="103" parent="globals/MikuFaceView" pc="268436832" symbol="onLayout"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="17" lineNum="108" parent="globals/MikuFaceView" pc="268436903" symbol="onLayout"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="17" lineNum="109" parent="globals/MikuFaceView" pc="268436914" symbol="onLayout"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="17" lineNum="110" parent="globals/MikuFaceView" pc="268436923" symbol="onLayout"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="18" lineNum="189" parent="globals/MikuFaceView" pc="268436950" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="18" lineNum="192" parent="globals/MikuFaceView" pc="268436953" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="18" lineNum="193" parent="globals/MikuFaceView" pc="268436961" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="18" lineNum="195" parent="globals/MikuFaceView" pc="268436962" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="18" lineNum="196" parent="globals/MikuFaceView" pc="268436969" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="18" lineNum="197" parent="globals/MikuFaceView" pc="268436975" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="19" lineNum="155" parent="globals/MikuFaceView" pc="268436992" symbol="replayIdle"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="19" lineNum="156" parent="globals/MikuFaceView" pc="268436995" symbol="replayIdle"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="19" lineNum="157" parent="globals/MikuFaceView" pc="268437002" symbol="replayIdle"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="19" lineNum="158" parent="globals/MikuFaceView" pc="268437016" symbol="replayIdle"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="354" parent="globals/MikuFaceView" pc="268437044" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="355" parent="globals/MikuFaceView" pc="268437047" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="356" parent="globals/MikuFaceView" pc="268437053" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="358" parent="globals/MikuFaceView" pc="268437059" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="359" parent="globals/MikuFaceView" pc="268437076" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="360" parent="globals/MikuFaceView" pc="268437084" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="361" parent="globals/MikuFaceView" pc="268437103" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="362" parent="globals/MikuFaceView" pc="268437110" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="363" parent="globals/MikuFaceView" pc="268437117" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="20" lineNum="366" parent="globals/MikuFaceView" pc="268437121" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="21" lineNum="126" parent="globals/MikuFaceView" pc="268437182" symbol="onEnterSleep"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="21" lineNum="129" parent="globals/MikuFaceView" pc="268437184" symbol="onEnterSleep"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="21" lineNum="130" parent="globals/MikuFaceView" pc="268437191" symbol="onEnterSleep"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="315" parent="globals/MikuFaceView" pc="268437203" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="316" parent="globals/MikuFaceView" pc="268437206" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="317" parent="globals/MikuFaceView" pc="268437218" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="318" parent="globals/MikuFaceView" pc="268437221" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="320" parent="globals/MikuFaceView" pc="268437261" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="321" parent="globals/MikuFaceView" pc="268437265" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="323" parent="globals/MikuFaceView" pc="268437293" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="325" parent="globals/MikuFaceView" pc="268437298" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="326" parent="globals/MikuFaceView" pc="268437315" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="327" parent="globals/MikuFaceView" pc="268437327" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="328" parent="globals/MikuFaceView" pc="268437345" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="331" parent="globals/MikuFaceView" pc="268437367" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="332" parent="globals/MikuFaceView" pc="268437371" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="333" parent="globals/MikuFaceView" pc="268437381" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="336" parent="globals/MikuFaceView" pc="268437396" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="338" parent="globals/MikuFaceView" pc="268437400" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="339" parent="globals/MikuFaceView" pc="268437407" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="341" parent="globals/MikuFaceView" pc="268437439" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="345" parent="globals/MikuFaceView" pc="268437463" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="22" lineNum="346" parent="globals/MikuFaceView" pc="268437480" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="23" lineNum="93" parent="globals/MikuFaceView" pc="268437508" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="23" lineNum="94" parent="globals/MikuFaceView" pc="268437510" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="23" lineNum="95" parent="globals/MikuFaceView" pc="268437522" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="174" parent="globals/MikuFaceView" pc="268437548" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="175" parent="globals/MikuFaceView" pc="268437550" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="177" parent="globals/MikuFaceView" pc="268437562" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="178" parent="globals/MikuFaceView" pc="268437574" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="180" parent="globals/MikuFaceView" pc="268437582" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="181" parent="globals/MikuFaceView" pc="268437593" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="182" parent="globals/MikuFaceView" pc="268437604" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="183" parent="globals/MikuFaceView" pc="268437615" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="184" parent="globals/MikuFaceView" pc="268437626" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="185" parent="globals/MikuFaceView" pc="268437637" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="24" lineNum="186" parent="globals/MikuFaceView" pc="268437648" symbol="onUpdate"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="25" lineNum="224" parent="globals/MikuFaceView" pc="268437660" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="25" lineNum="225" parent="globals/MikuFaceView" pc="268437663" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="25" lineNum="226" parent="globals/MikuFaceView" pc="268437689" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="25" lineNum="232" parent="globals/MikuFaceView" pc="268437764" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="25" lineNum="233" parent="globals/MikuFaceView" pc="268437780" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="58" parent="globals/WatchData" pc="268437801" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="59" parent="globals/WatchData" pc="268437804" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="60" parent="globals/WatchData" pc="268437812" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="62" parent="globals/WatchData" pc="268437820" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="63" parent="globals/WatchData" pc="268437826" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="66" parent="globals/WatchData" pc="268437827" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="67" parent="globals/WatchData" pc="268437835" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="68" parent="globals/WatchData" pc="268437841" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="69" parent="globals/WatchData" pc="268437851" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="70" parent="globals/WatchData" pc="268437872" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="72" parent="globals/WatchData" pc="268437894" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="75" parent="globals/WatchData" pc="268437921" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="76" parent="globals/WatchData" pc="268437929" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="26" lineNum="77" parent="globals/WatchData" pc="268437935" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="27" lineNum="34" parent="globals/WatchData" pc="268437953" symbol="refresh"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="27" lineNum="35" parent="globals/WatchData" pc="268437956" symbol="refresh"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="27" lineNum="36" parent="globals/WatchData" pc="268437963" symbol="refresh"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="27" lineNum="38" parent="globals/WatchData" pc="268437991" symbol="refresh"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="27" lineNum="39" parent="globals/WatchData" pc="268438003" symbol="refresh"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="27" lineNum="40" parent="globals/WatchData" pc="268438014" symbol="refresh"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="45" parent="globals/WatchData" pc="268438026" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="46" parent="globals/WatchData" pc="268438029" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="47" parent="globals/WatchData" pc="268438037" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="49" parent="globals/WatchData" pc="268438045" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="50" parent="globals/WatchData" pc="268438057" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="51" parent="globals/WatchData" pc="268438067" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="53" parent="globals/WatchData" pc="268438080" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="28" lineNum="54" parent="globals/WatchData" pc="268438090" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="29" lineNum="119" parent="globals/WatchData" pc="268438104" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="29" lineNum="120" parent="globals/WatchData" pc="268438107" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="29" lineNum="121" parent="globals/WatchData" pc="268438116" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="29" lineNum="122" parent="globals/WatchData" pc="268438143" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="29" lineNum="124" parent="globals/WatchData" pc="268438144" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="29" lineNum="125" parent="globals/WatchData" pc="268438164" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="30" lineNum="136" parent="globals/WatchData" pc="268438174" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="30" lineNum="137" parent="globals/WatchData" pc="268438177" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="30" lineNum="138" parent="globals/WatchData" pc="268438196" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="30" lineNum="139" parent="globals/WatchData" pc="268438226" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="30" lineNum="141" parent="globals/WatchData" pc="268438228" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="30" lineNum="142" parent="globals/WatchData" pc="268438232" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="81" parent="globals/WatchData" pc="268438292" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="82" parent="globals/WatchData" pc="268438295" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="83" parent="globals/WatchData" pc="268438303" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="85" parent="globals/WatchData" pc="268438311" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="86" parent="globals/WatchData" pc="268438323" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="87" parent="globals/WatchData" pc="268438329" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="90" parent="globals/WatchData" pc="268438330" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="91" parent="globals/WatchData" pc="268438342" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="31" lineNum="92" parent="globals/WatchData" pc="268438365" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="95" parent="globals/WatchData" pc="268438389" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="98" parent="globals/WatchData" pc="268438392" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="100" parent="globals/WatchData" pc="268438395" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="101" parent="globals/WatchData" pc="268438401" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="103" parent="globals/WatchData" pc="268438410" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="104" parent="globals/WatchData" pc="268438416" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="105" parent="globals/WatchData" pc="268438428" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="106" parent="globals/WatchData" pc="268438434" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="110" parent="globals/WatchData" pc="268438443" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="111" parent="globals/WatchData" pc="268438449" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="112" parent="globals/WatchData" pc="268438460" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="32" lineNum="115" parent="globals/WatchData" pc="268438463" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="33" lineNum="128" parent="globals/WatchData" pc="268438470" symbol="&lt;globals/WatchData/&lt;&gt;sameLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="33" lineNum="129" parent="globals/WatchData" pc="268438472" symbol="&lt;globals/WatchData/&lt;&gt;sameLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="33" lineNum="130" parent="globals/WatchData" pc="268438498" symbol="&lt;globals/WatchData/&lt;&gt;sameLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="33" lineNum="132" parent="globals/WatchData" pc="268438500" symbol="&lt;globals/WatchData/&lt;&gt;sameLocation&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="151" parent="globals/WatchData" pc="268438527" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="152" parent="globals/WatchData" pc="268438529" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="153" parent="globals/WatchData" pc="268438531" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="154" parent="globals/WatchData" pc="268438546" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="155" parent="globals/WatchData" pc="268438562" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="156" parent="globals/WatchData" pc="268438578" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="159" parent="globals/WatchData" pc="268438594" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="160" parent="globals/WatchData" pc="268438610" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="163" parent="globals/WatchData" pc="268438626" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="164" parent="globals/WatchData" pc="268438642" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="167" parent="globals/WatchData" pc="268438658" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="168" parent="globals/WatchData" pc="268438674" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="169" parent="globals/WatchData" pc="268438690" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="170" parent="globals/WatchData" pc="268438706" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="171" parent="globals/WatchData" pc="268438722" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="172" parent="globals/WatchData" pc="268438738" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="173" parent="globals/WatchData" pc="268438754" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="176" parent="globals/WatchData" pc="268438770" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="177" parent="globals/WatchData" pc="268438786" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="178" parent="globals/WatchData" pc="268438802" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="179" parent="globals/WatchData" pc="268438818" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="180" parent="globals/WatchData" pc="268438834" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="183" parent="globals/WatchData" pc="268438850" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="184" parent="globals/WatchData" pc="268438866" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="185" parent="globals/WatchData" pc="268438882" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="186" parent="globals/WatchData" pc="268438898" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="187" parent="globals/WatchData" pc="268438914" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="190" parent="globals/WatchData" pc="268438930" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="191" parent="globals/WatchData" pc="268438946" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="192" parent="globals/WatchData" pc="268438962" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="193" parent="globals/WatchData" pc="268438978" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="194" parent="globals/WatchData" pc="268438994" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="195" parent="globals/WatchData" pc="268439010" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="198" parent="globals/WatchData" pc="268439026" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="199" parent="globals/WatchData" pc="268439042" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="200" parent="globals/WatchData" pc="268439058" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="201" parent="globals/WatchData" pc="268439074" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="202" parent="globals/WatchData" pc="268439090" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="203" parent="globals/WatchData" pc="268439106" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="204" parent="globals/WatchData" pc="268439122" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="205" parent="globals/WatchData" pc="268439138" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="206" parent="globals/WatchData" pc="268439154" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="207" parent="globals/WatchData" pc="268439170" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="210" parent="globals/WatchData" pc="268439186" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="211" parent="globals/WatchData" pc="268439202" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="214" parent="globals/WatchData" pc="268439218" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="215" parent="globals/WatchData" pc="268439234" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="216" parent="globals/WatchData" pc="268439250" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="217" parent="globals/WatchData" pc="268439266" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="218" parent="globals/WatchData" pc="268439282" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="219" parent="globals/WatchData" pc="268439298" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="222" parent="globals/WatchData" pc="268439314" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="223" parent="globals/WatchData" pc="268439330" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="226" parent="globals/WatchData" pc="268439346" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="227" parent="globals/WatchData" pc="268439362" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="230" parent="globals/WatchData" pc="268439378" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="157" parent="globals/WatchData" pc="268439381" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="161" parent="globals/WatchData" pc="268439387" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="165" parent="globals/WatchData" pc="268439393" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="174" parent="globals/WatchData" pc="268439399" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="181" parent="globals/WatchData" pc="268439405" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="188" parent="globals/WatchData" pc="268439411" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="196" parent="globals/WatchData" pc="268439417" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="208" parent="globals/WatchData" pc="268439423" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="212" parent="globals/WatchData" pc="268439429" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="220" parent="globals/WatchData" pc="268439435" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="224" parent="globals/WatchData" pc="268439441" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="228" parent="globals/WatchData" pc="268439447" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/WatchData.mc" id="35" lineNum="231" parent="globals/WatchData" pc="268439453" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceApp.mc" id="37" lineNum="17" parent="globals/MikuFaceApp" pc="268439461" symbol="getInitialView"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceApp.mc" id="37" lineNum="18" parent="globals/MikuFaceApp" pc="268439463" symbol="getInitialView"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceApp.mc" id="38" lineNum="7" parent="globals/MikuFaceApp" pc="268439489" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceApp.mc" id="38" lineNum="8" parent="globals/MikuFaceApp" pc="268439491" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="40" lineNum="26" parent="globals/IdleLoop" pc="268439504" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="40" lineNum="27" parent="globals/IdleLoop" pc="268439506" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="40" lineNum="28" parent="globals/IdleLoop" pc="268439518" symbol="initialize"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="41" lineNum="31" parent="globals/IdleLoop" pc="268439528" symbol="onAnimationEvent"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="41" lineNum="32" parent="globals/IdleLoop" pc="268439530" symbol="onAnimationEvent"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="41" lineNum="33" parent="globals/IdleLoop" pc="268439537" symbol="onAnimationEvent"/>
+        <entry filename="/Users/kevin.pham/Desktop/Garmin Face/MikuFace/source/MikuFaceView.mc" id="41" lineNum="38" parent="globals/IdleLoop" pc="268439550" symbol="onAnimationEvent"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="36" method="true" symbol="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="16" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;"/>
+        <entry field="true" id="40" symbol="&lt;globals/IdleLoop/&lt;&gt;_view&gt;"/>
+        <entry field="true" id="8391670" symbol="condition"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="8391333" symbol="delegate"/>
+        <entry id="31" method="true" symbol="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;"/>
+        <entry id="33" method="true" symbol="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="32" method="true" symbol="&lt;globals/WatchData/&lt;&gt;readWeather&gt;"/>
+        <entry field="true" id="43" symbol="MikuSprite"/>
+        <entry id="23" method="true" symbol="idleStopped"/>
+        <entry field="true" id="8388962" symbol="temperature"/>
+        <entry field="true" id="44" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry field="true" id="9" symbol="&lt;globals/MikuFaceView/&lt;&gt;_animating&gt;"/>
+        <entry field="true" id="8388724" symbol="battery"/>
+        <entry field="true" id="8388912" symbol="steps"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="27" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;withThousands&gt;"/>
+        <entry field="true" id="8388913" symbol="stepGoal"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="30" method="true" symbol="&lt;globals/WatchData/&lt;&gt;readActivity&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="13" symbol="&lt;globals/MikuFaceView/&lt;&gt;_sprite&gt;"/>
+        <entry id="7" object="true" symbol="MikuFaceView"/>
+        <entry id="8391489" module="true" symbol="Weather"/>
+        <entry id="8388764" method="true" symbol="format"/>
+        <entry id="22" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389314" symbol="latitude"/>
+        <entry id="17" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;"/>
+        <entry field="true" id="8391445" symbol="visibility"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="38" symbol="sunrise"/>
+        <entry id="26" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8391314" method="true" symbol="onAnimationEvent"/>
+        <entry id="14" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;"/>
+        <entry id="25" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="20" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;"/>
+        <entry id="8389315" symbol="longitude"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="42" symbol="MikuIdle"/>
+        <entry id="18" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;"/>
+        <entry field="true" id="41" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="15" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;"/>
+        <entry field="true" id="11" symbol="&lt;globals/MikuFaceView/&lt;&gt;_idle&gt;"/>
+        <entry field="true" id="10" symbol="&lt;globals/MikuFaceView/&lt;&gt;_data&gt;"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="34" method="true" symbol="refresh"/>
+        <entry id="37" method="true" symbol="&lt;globals/WatchData/&lt;&gt;sameLocation&gt;"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="19" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="28" symbol="&lt;globals/WatchData/&lt;&gt;_persistedLocation&gt;"/>
+        <entry field="true" id="12" symbol="&lt;globals/MikuFaceView/&lt;&gt;_loop&gt;"/>
+        <entry id="8389317" symbol="degrees"/>
+        <entry id="24" method="true" symbol="replayIdle"/>
+        <entry id="8388642" module="true" symbol="Position"/>
+        <entry id="29" method="true" symbol="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;"/>
+        <entry field="true" id="39" symbol="sunset"/>
+        <entry id="21" method="true" symbol="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;"/>
+        <entry id="6" object="true" symbol="MikuFaceApp"/>
+        <entry id="35" method="true" symbol="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="5" object="true" symbol="IdleLoop"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="8" object="true" symbol="WatchData"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435568" name="idle" stackId="1" startPc="268435516"/>
+        <entry endPc="268435631" name="idle" stackId="1" startPc="268435573"/>
+        <entry endPc="268435676" name="idle" stackId="1" startPc="268435636"/>
+        <entry arg="true" endPc="268435865" name="dc" stackId="1" startPc="268435678"/>
+        <entry endPc="268435864" name="clock" stackId="2" startPc="268435681"/>
+        <entry endPc="268435864" name="hour" stackId="3" startPc="268435681"/>
+        <entry endPc="268435864" name="text" stackId="4" startPc="268435681"/>
+        <entry endPc="268435864" name="font" stackId="5" startPc="268435681"/>
+        <entry arg="true" endPc="268435957" name="value" stackId="1" startPc="268435866"/>
+        <entry arg="true" endPc="268436086" name="dc" stackId="1" startPc="268435958"/>
+        <entry arg="true" endPc="268436086" name="x" stackId="2" startPc="268435958"/>
+        <entry arg="true" endPc="268436086" name="y" stackId="3" startPc="268435958"/>
+        <entry arg="true" endPc="268436086" name="rising" stackId="4" startPc="268435958"/>
+        <entry arg="true" endPc="268436086" name="color" stackId="5" startPc="268435958"/>
+        <entry endPc="268436085" name="tip" stackId="6" startPc="268435961"/>
+        <entry endPc="268436085" name="base" stackId="7" startPc="268435961"/>
+        <entry arg="true" endPc="268436325" name="dc" stackId="1" startPc="268436087"/>
+        <entry endPc="268436324" name="font" stackId="2" startPc="268436090"/>
+        <entry endPc="268436324" name="count" stackId="3" startPc="268436090"/>
+        <entry endPc="268436324" name="goal" stackId="4" startPc="268436090"/>
+        <entry endPc="268436324" name="target" stackId="5" startPc="268436090"/>
+        <entry endPc="268436324" name="countWidth" stackId="6" startPc="268436090"/>
+        <entry endPc="268436324" name="left" stackId="7" startPc="268436090"/>
+        <entry arg="true" endPc="268436499" name="dc" stackId="1" startPc="268436326"/>
+        <entry endPc="268436498" name="temperature" stackId="2" startPc="268436329"/>
+        <entry endPc="268436498" name="text" stackId="3" startPc="268436329"/>
+        <entry endPc="268436498" name="condition" stackId="4" startPc="268436329"/>
+        <entry arg="true" endPc="268436770" name="dc" stackId="1" startPc="268436526"/>
+        <entry endPc="268436769" name="font" stackId="2" startPc="268436529"/>
+        <entry endPc="268436769" name="rise" stackId="3" startPc="268436529"/>
+        <entry endPc="268436769" name="set" stackId="4" startPc="268436529"/>
+        <entry endPc="268436769" name="riseWidth" stackId="5" startPc="268436529"/>
+        <entry endPc="268436769" name="setWidth" stackId="6" startPc="268436529"/>
+        <entry endPc="268436769" name="pair" stackId="7" startPc="268436529"/>
+        <entry endPc="268436769" name="x" stackId="8" startPc="268436529"/>
+        <entry arg="true" endPc="268436949" name="dc" stackId="1" startPc="268436791"/>
+        <entry endPc="268436948" name="idle" stackId="2" startPc="268436794"/>
+        <entry arg="true" endPc="268436991" name="dc" stackId="1" startPc="268436950"/>
+        <entry endPc="268436990" name="sprite" stackId="2" startPc="268436953"/>
+        <entry endPc="268437042" name="idle" stackId="1" startPc="268436995"/>
+        <entry arg="true" endPc="268437181" name="moment" stackId="1" startPc="268437044"/>
+        <entry arg="true" endPc="268437507" name="dc" stackId="1" startPc="268437203"/>
+        <entry endPc="268437506" name="percent" stackId="2" startPc="268437206"/>
+        <entry endPc="268437506" name="font" stackId="3" startPc="268437206"/>
+        <entry endPc="268437506" name="text" stackId="4" startPc="268437206"/>
+        <entry endPc="268437506" name="shell" stackId="5" startPc="268437206"/>
+        <entry endPc="268437506" name="left" stackId="6" startPc="268437206"/>
+        <entry endPc="268437506" name="top" stackId="7" startPc="268437206"/>
+        <entry endPc="268437506" name="inner" stackId="8" startPc="268437206"/>
+        <entry endPc="268437506" name="filled" stackId="9" startPc="268437206"/>
+        <entry arg="true" endPc="268437659" name="dc" stackId="1" startPc="268437548"/>
+        <entry arg="true" endPc="268437800" name="dc" stackId="1" startPc="268437660"/>
+        <entry endPc="268437799" name="now" stackId="2" startPc="268437663"/>
+        <entry endPc="268437799" name="text" stackId="3" startPc="268437663"/>
+        <entry arg="true" endPc="268437952" name="conditions" stackId="1" startPc="268437801"/>
+        <entry endPc="268437951" name="celsius" stackId="2" startPc="268437804"/>
+        <entry endPc="268437920" name="value" stackId="3" startPc="268437841"/>
+        <entry endPc="268437951" name="code" stackId="4" startPc="268437804"/>
+        <entry endPc="268438024" name="conditions" stackId="1" startPc="268437956"/>
+        <entry endPc="268438102" name="info" stackId="1" startPc="268438029"/>
+        <entry arg="true" endPc="268438173" name="location" stackId="1" startPc="268438104"/>
+        <entry endPc="268438172" name="degrees" stackId="2" startPc="268438107"/>
+        <entry arg="true" endPc="268438388" name="conditions" stackId="1" startPc="268438292"/>
+        <entry endPc="268438387" name="location" stackId="2" startPc="268438295"/>
+        <entry endPc="268438387" name="now" stackId="3" startPc="268438295"/>
+        <entry arg="true" endPc="268438469" name="conditions" stackId="1" startPc="268438389"/>
+        <entry endPc="268438442" name="activity" stackId="3" startPc="268438416"/>
+        <entry arg="true" endPc="268438526" name="a" stackId="1" startPc="268438470"/>
+        <entry arg="true" endPc="268438526" name="b" stackId="2" startPc="268438470"/>
+        <entry arg="true" endPc="268439460" name="code" stackId="1" startPc="268438527"/>
+        <entry arg="true" endPc="268439527" name="view" stackId="1" startPc="268439504"/>
+        <entry arg="true" endPc="268439562" name="event" stackId="1" startPc="268439528"/>
+        <entry arg="true" endPc="268439562" name="options" stackId="2" startPc="268439528"/>
+    </localVars>
+    <deviceInfo deviceVersion="e6263c2a80ff43933f83afa71f1f6645dc2cb4a3" partNumber="006-B4532-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MikuIdle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MikuSprite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/MikuFaceView" offset="125" parentId="globals" symbolId="MikuFaceView" type="class"/>
+        <dataEntry label="globals/Rez" offset="394" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/WatchData" offset="438" parentId="globals" symbolId="WatchData" type="class"/>
+        <dataEntry label="globals/MikuFaceApp" offset="635" parentId="globals" symbolId="MikuFaceApp" type="class"/>
+        <dataEntry label="globals/IdleLoop" offset="706" parentId="globals" symbolId="IdleLoop" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="768" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="821" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="MikuFaceView" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435488" name="&lt;init&gt;" parent="Rez" startPc="268435469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="WatchData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="MikuFaceApp" startPc="268435489">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="IdleLoop" startPc="268435501">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435569" name="idleStopped" parent="MikuFaceView" startPc="268435513">
+            <documentation><![CDATA[<div class="description"> Fall back to the still. Called by IdleLoop when playback ends for any<br/> reason other than reaching the end of the clip.<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435632" name="&lt;globals/MikuFaceView/&lt;&gt;startIdle&gt;" parent="MikuFaceView" startPc="268435570">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435677" name="&lt;globals/MikuFaceView/&lt;&gt;stopIdle&gt;" parent="MikuFaceView" startPc="268435633">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435865" name="&lt;globals/MikuFaceView/&lt;&gt;drawTime&gt;" parent="MikuFaceView" startPc="268435678">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435957" name="&lt;globals/MikuFaceView/&lt;&gt;withThousands&gt;" parent="MikuFaceView" startPc="268435866">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436086" name="&lt;globals/MikuFaceView/&lt;&gt;drawSunMarker&gt;" parent="MikuFaceView" startPc="268435958">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="rising"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436325" name="&lt;globals/MikuFaceView/&lt;&gt;drawSteps&gt;" parent="MikuFaceView" startPc="268436087">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436499" name="&lt;globals/MikuFaceView/&lt;&gt;drawWeather&gt;" parent="MikuFaceView" startPc="268436326">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436525" name="onHide" parent="MikuFaceView" startPc="268436500">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436770" name="&lt;globals/MikuFaceView/&lt;&gt;drawSunTimes&gt;" parent="MikuFaceView" startPc="268436526">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436780" name="onExitSleep" parent="MikuFaceView" startPc="268436771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436790" name="onShow" parent="MikuFaceView" startPc="268436781">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436949" name="onLayout" parent="MikuFaceView" startPc="268436791">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436991" name="&lt;globals/MikuFaceView/&lt;&gt;drawSprite&gt;" parent="MikuFaceView" startPc="268436950">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437043" name="replayIdle" parent="MikuFaceView" startPc="268436992">
+            <documentation><![CDATA[<div class="description"> Restart the loop, unless the watch has gone back to sleep in the<br/> meantime. Called by IdleLoop when a play-through finishes.<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437181" name="&lt;globals/MikuFaceView/&lt;&gt;formatMoment&gt;" parent="MikuFaceView" startPc="268437044">
+            <param id="moment"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437202" name="onEnterSleep" parent="MikuFaceView" startPc="268437182">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437507" name="&lt;globals/MikuFaceView/&lt;&gt;drawBattery&gt;" parent="MikuFaceView" startPc="268437203">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437547" name="initialize" parent="MikuFaceView" startPc="268437508">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437659" name="onUpdate" parent="MikuFaceView" startPc="268437548">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437800" name="&lt;globals/MikuFaceView/&lt;&gt;drawDate&gt;" parent="MikuFaceView" startPc="268437660">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437952" name="&lt;globals/WatchData/&lt;&gt;readWeather&gt;" parent="WatchData" startPc="268437801">
+            <param id="conditions"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438025" name="refresh" parent="WatchData" startPc="268437953">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438103" name="&lt;globals/WatchData/&lt;&gt;readActivity&gt;" parent="WatchData" startPc="268438026">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438173" name="&lt;globals/WatchData/&lt;&gt;rememberLocation&gt;" parent="WatchData" startPc="268438104">
+            <param id="location"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438291" name="&lt;globals/WatchData/&lt;&gt;recallLocation&gt;" parent="WatchData" startPc="268438174">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438388" name="&lt;globals/WatchData/&lt;&gt;readSunTimes&gt;" parent="WatchData" startPc="268438292">
+            <param id="conditions"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438469" name="&lt;globals/WatchData/&lt;&gt;resolveLocation&gt;" parent="WatchData" startPc="268438389">
+            <param id="conditions"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438526" name="&lt;globals/WatchData/&lt;&gt;sameLocation&gt;" parent="WatchData" startPc="268438470">
+            <param id="a"/>
+            <param id="b"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WatchData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268439460" name="&lt;globals/WatchData/&lt;&gt;conditionLabel&gt;" parent="WatchData" startPc="268438527">
+            <param id="code"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="MikuFaceApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439488" name="getInitialView" parent="MikuFaceApp" startPc="268439461">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439503" name="initialize" parent="MikuFaceApp" startPc="268439489">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="MikuFaceApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439527" name="initialize" parent="IdleLoop" startPc="268439504">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439562" name="onAnimationEvent" parent="IdleLoop" startPc="268439528">
+            <param id="event"/>
+            <param id="options"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
